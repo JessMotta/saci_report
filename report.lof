@@ -1,0 +1,64 @@
+\babel@toc {brazil}{}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {1}{\ignorespaces Elos e junta de um manipulador rob\IeC {\'o}tico.\relax }}{18}{figure.caption.4}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {2}{\ignorespaces Arquitetura geral do sistema.\relax }}{21}{figure.caption.5}
+\contentsline {figure}{\numberline {3}{\ignorespaces Configura\IeC {\c c}\IeC {\~a}o D-H do manipulador JeRoTIMON.\relax }}{24}{figure.caption.7}
+\contentsline {figure}{\numberline {4}{\ignorespaces \textit {Workspace} do manipulador no plano X-Y.\relax }}{25}{figure.caption.9}
+\contentsline {figure}{\numberline {5}{\ignorespaces \textit {{Workspace}} do manipulador no plano X-Z.\relax }}{25}{figure.caption.10}
+\contentsline {figure}{\numberline {6}{\ignorespaces \textit {{Workspace}} do manipulador no plano Y-Z.\relax }}{26}{figure.caption.11}
+\contentsline {figure}{\numberline {7}{\ignorespaces Estrutura anal\IeC {\'\i }tica do prot\IeC {\'o}tipo.\relax }}{27}{figure.caption.12}
+\contentsline {figure}{\numberline {8}{\ignorespaces Fluxograma do sistema de escanamento.\relax }}{28}{figure.caption.13}
+\contentsline {figure}{\numberline {9}{\ignorespaces Fluxograma do sistema de planejamento e execu\IeC {\c c}\IeC {\~a}o de trajet\IeC {\'o}ria.\relax }}{30}{figure.caption.14}
+\contentsline {figure}{\numberline {10}{\ignorespaces Modelos simulados do manipulador e do painel el\IeC {\'e}trico.\relax }}{32}{figure.caption.15}
+\contentsline {figure}{\numberline {11}{\ignorespaces Imagem capturada pela c\IeC {\^a}mera RGB.\relax }}{32}{figure.caption.16}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {12}{\ignorespaces Identifica\IeC {\c c}\IeC {\~a}o dos motores.\relax }}{33}{figure.caption.17}
+\contentsline {figure}{\numberline {13}{\ignorespaces Base do manipulador.\relax }}{34}{figure.caption.19}
+\contentsline {figure}{\numberline {14}{\ignorespaces Vista lateral do \textit {link} 2.\relax }}{34}{figure.caption.20}
+\contentsline {figure}{\numberline {15}{\ignorespaces Vista superior do \textit {link} 2.\relax }}{35}{figure.caption.21}
+\contentsline {figure}{\numberline {16}{\ignorespaces Teledyne Genie Nano C2590.\relax }}{36}{figure.caption.22}
+\contentsline {figure}{\numberline {17}{\ignorespaces Lente 16mm C Series VIS-NIR.\relax }}{36}{figure.caption.23}
+\contentsline {figure}{\numberline {18}{\ignorespaces Suporte para fixa\IeC {\c c}\IeC {\~a}o da c\IeC {\^a}mera.\relax }}{37}{figure.caption.24}
+\contentsline {figure}{\numberline {19}{\ignorespaces Integra\IeC {\c c}\IeC {\~a}o suporte-c\IeC {\^a}mera-lente.\relax }}{37}{figure.caption.25}
+\contentsline {figure}{\numberline {20}{\ignorespaces UWE-12/10-Q12PB-C.\relax }}{38}{figure.caption.27}
+\contentsline {figure}{\numberline {21}{\ignorespaces U2D2.\relax }}{39}{figure.caption.28}
+\contentsline {figure}{\numberline {22}{\ignorespaces Caixa objetivo.\relax }}{40}{figure.caption.30}
+\contentsline {figure}{\numberline {23}{\ignorespaces Manipulador na posi\IeC {\c c}\IeC {\~a}o home.\relax }}{41}{figure.caption.31}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {24}{\ignorespaces Histograma do conjunto de dados sem detec\IeC {\c c}\IeC {\~a}o da \textit {tag}.\relax }}{47}{figure.caption.40}
+\contentsline {figure}{\numberline {25}{\ignorespaces Boxplot do conjunto de dados sem detec\IeC {\c c}\IeC {\~a}o da \textit {tag}.\relax }}{47}{figure.caption.41}
+\contentsline {figure}{\numberline {26}{\ignorespaces \textit {Boxplot} da vari\IeC {\^a}ncia do tempo de busca entre os pontos A e B. \relax }}{50}{figure.caption.46}
+\contentsline {figure}{\numberline {27}{\ignorespaces \textit {Boxplot} da vari\IeC {\^a}ncia do tempo total da miss\IeC {\~a}o entre os pontos A e B. \relax }}{51}{figure.caption.47}
+\contentsline {figure}{\numberline {28}{\ignorespaces Modelo completo teste R\&R para tempo de busca.\relax }}{52}{figure.caption.48}
+\contentsline {figure}{\numberline {29}{\ignorespaces Modelo completo teste R\&R para tempo total da miss\IeC {\~a}o.\relax }}{52}{figure.caption.49}
+\contentsline {figure}{\numberline {30}{\ignorespaces Gr\IeC {\'a}ficos do estudo R\&R para tempo de busca.\relax }}{53}{figure.caption.50}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {31}{\ignorespaces \IeC {\'A}rvore de falhas do sistema.\relax }}{57}{figure.caption.56}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {32}{\ignorespaces Coordenadas.\relax }}{75}{figure.caption.63}
+\contentsline {figure}{\numberline {33}{\ignorespaces Link 0.\relax }}{75}{figure.caption.64}
+\contentsline {figure}{\numberline {34}{\ignorespaces Link 1.\relax }}{76}{figure.caption.65}
+\contentsline {figure}{\numberline {35}{\ignorespaces Link 2.\relax }}{77}{figure.caption.66}
+\contentsline {figure}{\numberline {36}{\ignorespaces Link 3.\relax }}{77}{figure.caption.67}
+\contentsline {figure}{\numberline {37}{\ignorespaces Link 4.\relax }}{78}{figure.caption.68}
+\contentsline {figure}{\numberline {38}{\ignorespaces Link 5.\relax }}{79}{figure.caption.69}
+\addvspace {10pt}
+\addvspace {10pt}
+\contentsline {figure}{\numberline {39}{\ignorespaces Desenho t\IeC {\'e}cnico do JeRoTIMON, vistas: frontal, lateral esquerda e superior.\relax }}{84}{figure.caption.71}
+\contentsline {figure}{\numberline {40}{\ignorespaces Desenho t\IeC {\'e}cnico do JeRoTIMON, vista isom\IeC {\'e}trica.\relax }}{85}{figure.caption.72}
+\contentsline {figure}{\numberline {41}{\ignorespaces Analise est\IeC {\'a}tica - condi\IeC {\c c}\IeC {\~a}o de maior esfor\IeC {\c c}o exigido.\relax }}{86}{figure.caption.73}
+\contentsline {figure}{\numberline {42}{\ignorespaces Analise est\IeC {\'a}tica - condi\IeC {\c c}\IeC {\~a}o de maior esfor\IeC {\c c}o exigido (cargas no centr\IeC {\'o}ide).\relax }}{86}{figure.caption.74}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}
+\addvspace {10pt}

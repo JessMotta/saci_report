@@ -1,0 +1,135 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\setlength{\labelsep}{0pt}\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{v-1.9.6 }
+
+\bibitem[16mm C Series VIS-NIR Fixed Focal Length Lens s.d.]{lens}
+\abntrefinfo{16mm\ldots}{16MM\ldots}{s.d.}
+{16MM C Series VIS-NIR Fixed Focal Length Lens. s.d.
+  \url{https://bit.ly/35zzQMq}.
+Acessado: 26-10-2020.}
+
+\bibitem[Beeson e Ames 2015]{beeson2015trac}
+\abntrefinfo{Beeson e Ames}{BEESON; AMES}{2015}
+{BEESON, P.; AMES, B. Trac-ik: An open-source library for improved solving of
+  generic inverse kinematics. In:  IEEE. \emph{2015 IEEE-RAS 15th International
+  Conference on Humanoid Robots (Humanoids)}. [S.l.], 2015. p. 928--935.}
+
+\bibitem[Bir Marker Localization 2020]{birmarker}
+\abntrefinfo{Bir\ldots}{BIR\ldots}{2020}
+{BIR Marker Localization. 2020.
+  \url{https://https://github.com/Brazilian-Institute-of-Robotics/bir_marker_localization/}.
+Accessed: 2020-04-24.}
+
+\bibitem[Erthal 1992]{erthal}
+\abntrefinfo{Erthal}{ERTHAL}{1992}
+{ERTHAL, J.~L. Estudo de métodos para a solução da cinemática inversa de
+  robôs industriais para implementação computacional.
+\emph{UFSC, Programa de Pós-Graduação}, 10 1992.}
+
+\bibitem[Hernandez-Mendez et al. 2017]{hernandez2017design}
+\abntrefinfo{Hernandez-Mendez et al.}{HERNANDEZ-MENDEZ et al.}{2017}
+{HERNANDEZ-MENDEZ, S. et al. Design and implementation of a robotic arm using
+  ros and moveit! In:  IEEE. \emph{2017 IEEE International Autumn Meeting on
+  Power, Electronics and Computing (ROPEC)}. [S.l.], 2017. p.~1--6.}
+
+\bibitem[Hern{\'a}ndez-Ordo{\~n}ez et al. 2018]{hernandez2018education}
+\abntrefinfo{Hern{\'a}ndez-Ordo{\~n}ez et al.}{HERN{\'A}NDEZ-ORDO{\~N}EZ et
+  al.}{2018}
+{HERN{\'A}NDEZ-ORDO{\~N}EZ, M. et al. An education application for teaching
+  robot arm manipulator concepts using augmented reality.
+\emph{Mobile Information Systems}, Hindawi, v.~2018, 2018.}
+
+\bibitem[Industrial Robots: Robot Investment Reaches Record 16.5 billion USD
+  2019]{ifr}
+\abntrefinfo{Industrial\ldots}{INDUSTRIAL\ldots}{2019}
+{INDUSTRIAL Robots: Robot Investment Reaches Record 16.5 billion USD. 2019.
+  \url{https://ifr.org/ifr-press-releases/news/robot-investment-reaches-record-16.5-billion-usd/}.
+Acesso em: 15-04-2020.}
+
+\bibitem[ISO-8373 2012]{ISO8373}
+\abntrefinfo{ISO-8373}{ISO-8373}{2012}
+{ISO-8373. \emph{Robots and robotic devices — Vocabulary}.
+Geneva, CH, 2012.}
+
+\bibitem[Javeed, Prakash e Kulkarni 2019]{javeed2019autonomous}
+\abntrefinfo{Javeed, Prakash e Kulkarni}{JAVEED; PRAKASH; KULKARNI}{2019}
+{JAVEED, A.; PRAKASH, V.~G.; KULKARNI, S.~P. Autonomous service robot. In:
+  \emph{Proceedings of the Advances in Robotics 2019}. [S.l.: s.n.], 2019.
+  p.~1--6.}
+
+\bibitem[Khan, Konda e Ryu 2018]{khan2018ros}
+\abntrefinfo{Khan, Konda e Ryu}{KHAN; KONDA; RYU}{2018}
+{KHAN, K.~A.; KONDA, R.~R.; RYU, J.-C. Ros-based control for a robot
+  manipulator with a demonstration of the ball-on-plate task.
+\emph{Advances in robotics research}, v.~2, n.~2, p.~113, 2018.}
+
+\bibitem[Leite 2005]{leite2005controle}
+\abntrefinfo{Leite}{LEITE}{2005}
+{LEITE, A.~C.
+\emph{Controle H{\'\i}brido de For{\c{c}}a e Vis{\~a}o de um Manipulador
+  Rob{\'o}tico Sobre Superf{\'\i}cies Desconhecidas}.
+Tese (Doutorado) --- Tese de Mestrado, Departamento de Engenharia El{\'e}trica,
+  2005.}
+
+\bibitem[Pimenta 2009]{pimenta}
+\abntrefinfo{Pimenta}{PIMENTA}{2009}
+{PIMENTA, T.~T. Controle de manipuladores rob{\'o}ticos.
+\emph{PUC-Rio de Janeiro, Departamento de Engenharia de Controle e
+  automação}, 12 2009.}
+
+\bibitem[Robotis s.d.]{dynamixel}
+\abntrefinfo{Robotis}{ROBOTIS}{s.d.}
+{ROBOTIS. s.d. \url{http://www.robotis.us/}.
+Acessado: 19-10-2020.}
+
+\bibitem[Romano 2002]{robindust}
+\abntrefinfo{Romano}{ROMANO}{2002}
+{ROMANO, V.~F. \emph{Rob{\'o}tica Industrial: Aplica{\c{c}}{\~a}o na
+  ind{\'u}stria de manufatura e processos}. S{\~a}o Paulo: Edgar Blucher, 2002.
+  v.~256.}
+
+\bibitem[Santos 2004]{santos2004robotica}
+\abntrefinfo{Santos}{SANTOS}{2004}
+{SANTOS, V.~M. Rob{\'o}tica industrial.
+\emph{Universidade de Aveito-Departamento de Engenharia Mec{\^a}nica}, 2004.}
+
+\bibitem[Spong, Hutchinson e Vidyasagar 2005]{spong2005robot}
+\abntrefinfo{Spong, Hutchinson e Vidyasagar}{SPONG; HUTCHINSON;
+  VIDYASAGAR}{2005}
+{SPONG, M.~W.; HUTCHINSON, S.; VIDYASAGAR, M. Robot modeling and control, jon
+  wiley \& sons.
+\emph{Inc., ISBN-100-471-649}, 2005.}
+
+\bibitem[Sucan, Moll e Kavraki 2012]{sucan2012open}
+\abntrefinfo{Sucan, Moll e Kavraki}{SUCAN; MOLL; KAVRAKI}{2012}
+{SUCAN, I.~A.; MOLL, M.; KAVRAKI, L.~E. The open motion planning library.
+\emph{IEEE Robotics \& Automation Magazine}, IEEE, v.~19, n.~4, p. 72--82,
+  2012.}
+
+\bibitem[Teledyne Dalsa s.d.]{teledyne}
+\abntrefinfo{Teledyne\ldots}{TELEDYNE\ldots}{s.d.}
+{TELEDYNE Dalsa. s.d.
+  \url{https://www.teledynedalsa.com/en/products/imaging/cameras/genie-nano-1gige/}.
+Acessado: 19-10-2020.}
+
+\bibitem[U2D2 s.d.]{u2d2}
+\abntrefinfo{U2D2}{U2D2}{s.d.}
+{U2D2. s.d. \url{https://emanual.robotis.com/docs/en/parts/interface/u2d2/}.
+Acessado: 26-10-2020.}
+
+\bibitem[UWE-12/10-Q12PB-C s.d.]{dcdc}
+\abntrefinfo{UWE-12/10-Q12PB-C}{UWE-12/10-Q12PB-C}{s.d.}
+{UWE-12/10-Q12PB-C. s.d. \url{https://bit.ly/31i2SyP}.
+Acessado: 19-10-2020.}
+
+\bibitem[Zhang, Lin e Wu 2019]{zhang2019motion}
+\abntrefinfo{Zhang, Lin e Wu}{ZHANG; LIN; WU}{2019}
+{ZHANG, S.; LIN, Z.; WU, G. Motion planning of a 5-dof anthropomorphic robotic
+  arm under ros environment. In:  SPRINGER. \emph{IFToMM International
+  Conference on Mechanisms, Transmissions and Applications}. [S.l.], 2019. p.
+  409--418.}
+
+\end{thebibliography}

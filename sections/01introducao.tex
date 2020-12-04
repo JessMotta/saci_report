@@ -1,0 +1,60 @@
+\chapter{INTRODUÇÃO}
+\label{chap:intro}
+A robótica é um campo relativamente jovem da tecnologia moderna que atravessa os limites da engenharia tradicional \cite{spong2005robot}. O estudo da robótica é um ramo da tecnologia que engloba área de mecânica, eletrônica e computação, com graus de teoria de controle, microeletrônica, inteligência artificial, fatores humanos e de produção \cite{pimenta}. Segundo \cite{erthal}, o crescimento da robótica na indústria é justificado em face das exigências de maior qualidade, produtividade e flexibilidade nos processos fabris. Na área industrial, a robótica evoluiu devido ao aumento de uso de robôs e manipuladores industriais.
+
+O estudo do desenvolvimento de manipuladores robóticos foi iniciado por volta de 1954 com George Devol, quando foi desenvolvido o primeiro robô programável e desde então grandes desenvolvimentos nessa área foram atingidos. Como resultado desse avanço, o investimento de empresas foi em torno de 16,5 bilhões de dólares em 2018, chegando a marca de 420 mil unidades enviadas mundialmente, com perspectiva de crescimento médio de 12\% ao ano entre 2020 e 2022 \cite{ifr}.
+
+Um manipulador robótico é um dispositivo mecânico composto de elementos rígidos (elos) que proporcionam a sustentação e alcance do braço. A inevitabilidade de apresentar algum grau de flexibilidade faz com que esses elos necessitem ser projetados para apresentar elevada rigidez aos esforços que o manipulador será submetido. Esses elos são conectados entre si através de articulações (juntas), que oferecem graus de liberdade ao manipulador e controle de movimento relativo entre os elos. Essas juntas podem ser basicamente divididas em dois grupos: juntas prismáticas e juntas de rotação. Neste projeto foram utilizadas juntas de rotação. A disposição dessas juntas determina a classificação dos manipuladores como Cartesianos, Esféricos, Cilíndricos, entre outros \cite{robindust}.
+
+Este relatório descreve o processo de construção de um manipulador robótico desenvolvido no Centro de Competência em Robótica e Sistemas Autônomos do SENAI CIMATEC e é destinado ao programa de formação Novos Talentos. São descritas as etapas de concepção, simulação, testes e implementação física.
+
+
+%------------------------------------------------------------------
+\section{Objetivos}
+\label{sec:obj}
+O propósito deste projeto é construir um manipulador robótico capaz de identificar um marcador visual por meio de uma câmera RGB e proceder com a função de acionar um painel elétrico. 
+Para isso, os objetivos específicos são:
+\begin{itemize}
+  \item  Realizar estudo do Estado da Arte(\textit{\acs{SOTA}}) sobre manipuladores.
+  \item  Realizar testes e parametrização dos servomotores.
+  \item  Propor um modelo de manipulador robótico.
+  \item  Parametrizar o pacote de reconhecimento de marcadores visuais. 
+  \item  Desenvolver um pacote de configuração do \textit{MoveIt}.
+  \item  Desenvolver o código para realizar a missão. 
+  \item  Realizar a simulação do protótipo do manipulador em software.   
+  \item  Implementar a versão física do protótipo.
+  \item  Realizar testes e estudos estatísticos.
+\end{itemize} 
+%------------------------------------------------------------------
+\section{Justificativa} %motivação
+\label{sec:just}
+
+  Apesar da crescente demanda, há falta de profissionais habilitados à desenvolver pesquisas e aplicações na área da robótica. O presente trabalho tem como impulsionador principal a capacitação de novos pesquisadores preparados para solucionar os mais diversos problemas relacionados a robótica e sistemas autônomos.
+
+  A busca por melhor eficiência e precisão na realização de atividades em locais que a presença do ser humano torna-se difícil, arriscado e até mesmo impossível, vem se tornando cada vez maior no cotidiano dos ambiente industriais. Além disso, é importante a capacidade do robô de interagir com o ambiente a partir da captura e análise de estímulos visuais \cite{leite2005controle}. 
+
+  Este projeto traz, dentre os benefícios, a utilização  de manipuladores robóticos autônomos que sejam capazes de identificar marcadores visuais e realizar tarefas que possam ser perigosas e/ou repetitivas para o ser humano. Espera-se que este projeto seja continuado e que seus resultados sejam compartilhados na comunidade científica, contribuindo para a construção de outros manipuladores com características e/ou objetivos semelhantes.
+  
+
+
+
+%------------------------------------------------------------------
+\section{Organização do relatório}
+\label{sec:org}
+O presente relatório está organizado em oito capítulos, sendo este de introdução e descrição da justificativa/motivação dos objetivos e da organização do documento.
+
+No capítulo \ref{chap:conce}, Conceito do Sistema, são descritos  parâmetros básicos do projeto, dentre eles os requisitos do cliente, requisitos técnicos e o estudo do estado da arte.
+
+O capítulo \ref{chap:desenv}, Desenvolvimento do Sistema, apresenta a descrição do sistema onde serão apresentados a arquitetura geral, especificações técnicas, o ambiente de operação do manipulador e a estrutura analítica do protótipo. Além disso, trará as especificações funcionais que compõem o sistema, sua arquitetura de software e o que foi desenvolvido para simulação. 
+
+O capítulo \ref{chap:implementacao}, Implementação, explica a construção física do manipulador. São expostos seus parâmetros de configuração e sua estrutura. 
+
+O capítulo \ref{chap:result}, Resultados e Análises, são apresentados os resultados alcançados e a análise dos dados amostrados através de estudos estatísticos. 
+
+O capítulo \ref{chap:conf}, Confiabilidade do Sistema, detalha a análise dos modos e efeitos de falhas.
+
+No capítulo \ref{chap:conhec}, Gestão do Conhecimento, é feito um estudo sobre as lições aprendidas além de apresentar o guia de uso.
+
+Por fim, o capítulo \ref{chap:conclu} apresenta a conclusão do relatório.
+
+

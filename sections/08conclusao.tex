@@ -1,0 +1,12 @@
+\chapter{CONCLUSÃO}
+\label{chap:conclu}
+
+O presente relatório descreveu a idealização, simulação e construção do JeRoTIMON, um manipulador robótico com 5 \textit{\acs{DoF}}, integrado ao \textit{\acs{ROS}}, capaz de acionar um painel elétrico a partir da localização de um marcador visual \textit{ArUco}. A estrutura física do robô foi concebida de acordo com os modelos \textit{\acs{URDF}} projetados. 
+
+Para possibilitar o uso da ferramenta \textit{Moveit}, arquivos de configuração foram gerados e sua comunicação com o modelo simulado no \textit{Gazebo} foi estabelecida. Para resolver as equações de cinemática inversa optou-se pelo plugin TRAC-IK e para o planejamento de trajetória foi utilizada a biblioteca \textit{\acs{OMPL}}.
+
+Foi desenvolvido em linguagem C++ um pacote capaz de comunicar o sistema de escaneamento e o sistema de planejamento/execução. A utilização da câmera Teledyne Genie Nano C2590 possibilitou a identificação da \textit{tag ArUco} com precisão, tornando o sistema capaz de localizar o painel elétrico e planejar uma trajetória que leve o \textit{endeffector} do manipulador até o alvo estabelecido.
+
+Foram realizados 80 testes considerando diferentes algoritmos, posições e orientações para o painel elétrico. Os resultados alcançados mostram que JeRoTIMON foi capaz de realizar a tarefa em 91.25\% dos casos, com tempo médio de busca de 23.95 segundos e o tempo médio de execução de 86.06 segundos, resultados estes considerados satisfatórios para o prosseguimento do projeto.
+
+Para sua próxima aplicação, o manipulador será instalado em um robô móvel \textit{Warthog} que estará equipado com sensores de localização, mapeamento e detecção de obstáculos. De forma autônoma, este conjunto irá localizar e desarmar uma bomba hipotética instalada em ambiente aberto.

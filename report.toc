@@ -1,0 +1,79 @@
+\changetocdepth {3}
+\babel@toc {brazil}{}
+\contentsline {chapter}{\chapternumberline {1}INTRODU\IeC {\c C}\IeC {\~A}O}{13}{chapter.1}
+\contentsline {section}{\numberline {1.1}Objetivos}{13}{section.1.1}
+\contentsline {section}{\numberline {1.2}Justificativa}{14}{section.1.2}
+\contentsline {section}{\numberline {1.3}Organiza\IeC {\c c}\IeC {\~a}o do relat\IeC {\'o}rio}{14}{section.1.3}
+\contentsline {chapter}{\chapternumberline {2}CONCEITO DO SISTEMA}{17}{chapter.2}
+\contentsline {section}{\numberline {2.1}Par\IeC {\^a}metros b\IeC {\'a}sicos}{17}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Requisitos do cliente}{17}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Requisitos t\IeC {\'e}cnicos}{17}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}Estudo do estado da arte}{18}{subsection.2.1.3}
+\contentsline {chapter}{\chapternumberline {3}DESENVOLVIMENTO DO SISTEMA}{21}{chapter.3}
+\contentsline {section}{\numberline {3.1}Descri\IeC {\c c}\IeC {\~a}o do sistema}{21}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Arquitetura geral}{21}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Especifica\IeC {\c c}\IeC {\~a}o t\IeC {\'e}cnica}{22}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Ambiente de opera\IeC {\c c}\IeC {\~a}o}{24}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Estrutura anal\IeC {\'\i }tica do prot\IeC {\'o}tipo}{26}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Especifica\IeC {\c c}\IeC {\~a}o funcional}{27}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Escaneamento}{27}{subsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.1.1}Descri\IeC {\c c}\IeC {\~a}o}{27}{subsubsection.3.2.1.1}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Premissas necess\IeC {\'a}rias}{28}{subsubsection.3.2.1.2}
+\contentsline {subsubsection}{\numberline {3.2.1.3}Depend\IeC {\^e}ncias}{29}{subsubsection.3.2.1.3}
+\contentsline {subsubsection}{\numberline {3.2.1.4}Sa\IeC {\'\i }das}{29}{subsubsection.3.2.1.4}
+\contentsline {subsection}{\numberline {3.2.2}Planejamento e Execu\IeC {\c c}\IeC {\~a}o de Trajet\IeC {\'o}ria}{29}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Descri\IeC {\c c}\IeC {\~a}o}{29}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Premissas necess\IeC {\'a}rias}{30}{subsubsection.3.2.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.3}Depend\IeC {\^e}ncias}{30}{subsubsection.3.2.2.3}
+\contentsline {subsubsection}{\numberline {3.2.2.4}Sa\IeC {\'\i }das}{31}{subsubsection.3.2.2.4}
+\contentsline {section}{\numberline {3.3}Arquitetura de software}{31}{section.3.3}
+\contentsline {section}{\numberline {3.4}Simula\IeC {\c c}\IeC {\~a}o do sistema}{31}{section.3.4}
+\contentsline {chapter}{\chapternumberline {4}IMPLEMENTA\IeC {\c C}\IeC {\~A}O}{33}{chapter.4}
+\contentsline {section}{\numberline {4.1}Parametriza\IeC {\c c}\IeC {\~a}o dos motores}{33}{section.4.1}
+\contentsline {section}{\numberline {4.2}Estrutura f\IeC {\'\i }sica}{33}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Base}{34}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Elos ou \textit {links}}{34}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Suportes}{35}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}C\IeC {\^a}mera}{35}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.5}Atuadores}{37}{subsection.4.2.5}
+\contentsline {section}{\numberline {4.3}Sistema de Pot\IeC {\^e}ncia}{38}{section.4.3}
+\contentsline {section}{\numberline {4.4}Comunica\IeC {\c c}\IeC {\~a}o}{38}{section.4.4}
+\contentsline {section}{\numberline {4.5}An\IeC {\'a}lise de esfor\IeC {\c c}os}{39}{section.4.5}
+\contentsline {section}{\numberline {4.6}Configura\IeC {\c c}\IeC {\~o}es}{40}{section.4.6}
+\contentsline {chapter}{\chapternumberline {5}RESULTADOS E AN\IeC {\'A}LISES}{43}{chapter.5}
+\contentsline {section}{\numberline {5.1}Caracteriza\IeC {\c c}\IeC {\~a}o do problema e determina\IeC {\c c}\IeC {\~a}o do modelo}{43}{section.5.1}
+\contentsline {section}{\numberline {5.2}Planejamento dos experimentos}{43}{section.5.2}
+\contentsline {section}{\numberline {5.3}Resultados alcan\IeC {\c c}ados}{44}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}An\IeC {\'a}lise de regress\IeC {\~a}o linear}{44}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}ANOVA}{46}{subsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.2.1}An\IeC {\'a}lise de vari\IeC {\^a}ncia sem detec\IeC {\c c}\IeC {\~a}o da \textit {tag}}{46}{subsubsection.5.3.2.1}
+\contentsline {subsubsection}{\numberline {5.3.2.2}An\IeC {\'a}lse de vari\IeC {\^a}ncia com detec\IeC {\c c}\IeC {\~a}o da \textit {tag}}{48}{subsubsection.5.3.2.2}
+\contentsline {subsection}{\numberline {5.3.3}An\IeC {\'a}lise de repetibilidade e reprodutibilidade}{51}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}Conclus\IeC {\~o}es dos testes estat\IeC {\'\i }sticos}{54}{section.5.4}
+\contentsline {chapter}{\chapternumberline {6}CONFIABILIDADE DO SISTEMA}{55}{chapter.6}
+\contentsline {section}{\numberline {6.1}An\IeC {\'a}lise dos modos e efeitos de falhas}{55}{section.6.1}
+\contentsline {section}{\numberline {6.2}An\IeC {\'a}lise da \IeC {\'a}rvore de falhas}{56}{section.6.2}
+\contentsline {chapter}{\chapternumberline {7}GEST\IeC {\~A}O DO CONHECIMENTO}{59}{chapter.7}
+\contentsline {section}{\numberline {7.1}Li\IeC {\c c}\IeC {\~o}es aprendidas}{59}{section.7.1}
+\contentsline {section}{\numberline {7.2}Guia de uso para simula\IeC {\c c}\IeC {\~a}o}{59}{section.7.2}
+\contentsline {section}{\numberline {7.3}Guia de uso para o modelo real}{62}{section.7.3}
+\contentsline {chapter}{\chapternumberline {8}CONCLUS\IeC {\~A}O}{65}{chapter.8}
+\contentsline {chapter}{REFER\IeC {\^E}NCIAS }{67}{section*.59}
+\renewcommand *{\cftappendixname }{AP\^ENDICE \space }
+\contentsline {appendix}{\chapternumberline {A}\IeC {\'A}rvores de TF desconectadas}{70}{appendix.A}
+\contentsline {appendix}{\chapternumberline {B}\IeC {\'A}rvores de TF conectadas}{71}{appendix.B}
+\contentsline {appendix}{\chapternumberline {C}Diagrama de n\IeC {\'o}s do sistema}{74}{appendix.C}
+\contentsline {appendix}{\chapternumberline {D}Propriedades de Massa do JeRoTIMON}{75}{appendix.D}
+\contentsline {appendix}{\chapternumberline {E}Lista de suportes.}{81}{appendix.E}
+\contentsline {appendix}{\chapternumberline {F}Projeto mec\IeC {\^a}nico}{83}{appendix.F}
+\contentsline {section}{\numberline {F.1}Desenho mec\IeC {\^a}nico}{83}{section.F.1}
+\contentsline {section}{\numberline {F.2}Analise est\IeC {\'a}tica}{86}{section.F.2}
+\contentsline {appendix}{\chapternumberline {G}Algoritmo de busca e acionamento do painel}{89}{appendix.G}
+\contentsline {appendix}{\chapternumberline {H}Diagrama el\IeC {\'e}trico do JeRoTIMON}{101}{appendix.H}
+\contentsline {appendix}{\chapternumberline {I}Diagrama de conex\IeC {\~a}o do JeRoTIMON}{109}{appendix.I}
+\cftinsert {AAA}
+\renewcommand *{\cftappendixname }{ANEXO \space }
+\contentsline {appendix}{\chapternumberline {A}Especifica\IeC {\c c}\IeC {\~o}es da c\IeC {\^a}mera Dalsa Genie Nano}{115}{appendix.anexochapback.1}
+\contentsline {appendix}{\chapternumberline {B}Especifica\IeC {\c c}\IeC {\~o}es do motor \textit {Dynamixel} PH42-020-S300-R}{119}{appendix.anexochapback.2}
+\contentsline {appendix}{\chapternumberline {C}Especifica\IeC {\c c}\IeC {\~o}es do motor Dynamixel PH54-100-S500-R}{123}{appendix.anexochapback.3}
+\contentsline {appendix}{\chapternumberline {D}Especifica\IeC {\c c}\IeC {\~o}es do motor Dynamixel PH54-200-S500-R}{127}{appendix.anexochapback.4}

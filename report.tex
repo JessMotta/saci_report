@@ -1,0 +1,992 @@
+% --------------------------------------------------------------------------
+% Report template for BIR projects
+% Report template with support for Portuguese and English languages
+% Change language {brazil or english} in \documentclass as per the examples
+% This template has support for the ABNT citing format
+% 
+% Original version: jan/2019
+% https://github.com/
+% 
+% Based on ABNTEX2 and the thesis template
+% --------------------------------------------------------------------------
+\documentclass[
+%\DeclareUnicodeCharacter{200B}{}
+% --------------------------------------------------------------------------
+% classe memoir . options                                                   
+12pt,					% tamanho da fonte
+openright,				% cap. começam em pág ímpar (ins pág vazia caso preciso)
+twoside,				% para impressão em verso e anverso. Oposto a oneside
+a4paper,				% tamanho do papel
+% --------------------------------------------------------------------------
+% classe abntex2 . options                                                  
+%chapter=TITLE,			% títulos de capítulos convertidos em letras maiúsc.
+%section=TITLE,			% títulos de seções convertidos em letras maiúsc.
+%subsection=TITLE,		% títulos de subseções convertidos em letras maiúsc.
+%subsubsection=TITLE,	% títulos de subsubseções convertidos em letras maiúsc.
+% --------------------------------------------------------------------------
+% Opções de IDIOMA do pacote babel                                          
+english,
+brazil
+]{ABNT/abntex2_report}
+% --------------------------------------------------------------------------
+% Pacotes básicos    
+\usepackage{lmodern}			% Usa a fonte Latin Modern			
+\usepackage[T1]{fontenc}		% Selecao de codigos de fonte.
+\usepackage[utf8]{inputenc}		% Codificacao do documento (conversão automática dos acentos)
+\usepackage{indentfirst}		% Indenta o primeiro parágrafo de cada seção.
+\usepackage{color}				% Controle das cores
+\usepackage{graphicx}			% Inclusão de gráficos
+\usepackage{microtype} 			% para melhorias de justificação
+\usepackage{lipsum}	
+\usepackage[brazilian,hyperpageref]{backref} % páginas com citações na bibliog.
+%\usepackage[alf,abnt-etal-list=0,abnt-etal-cite=3,abnt-emphasize=bf]{abntex2cite}
+\usepackage[alf]{abntex2cite}
+%	
+\usepackage{lastpage}			% Usado pela Ficha catalográfica
+%\usepackage{subfig}
+\usepackage{supertabular}       % tabela na capa do documento
+\usepackage{booktabs}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{adjustbox}
+\usepackage{amssymb,amsmath,mathrsfs}
+\usepackage{algorithm,algpseudocode}
+\usepackage{pgfplots}
+\usepackage{tikz}
+\usepackage{titlesec}
+\usepackage{ragged2e}
+\usepackage{tocloft}
+\usepackage{threeparttable}
+\usepackage{etoolbox}
+\usepackage[normalem]{ulem}
+\usepackage{yaacro}
+\usepackage[none]{verlab}
+%\usepackage{fontspec}
+%\setmainfont{Helvetica Light}
+\usepackage{lscape}
+%\usepackage[graphicx]{realboxes}
+\usepackage{rotating}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{dirtytalk}
+\usepackage{pdfpages}
+\usepackage{threeparttable}
+\usepackage{hyperref}
+%\hypersetup{draft}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{listingsutf8}
+%\usepackage[xindy={language=portuguese},subentrycounter,seeautonumberlist,nonumberlist=true]{glossaries}
+%\usepackage[lofdepth,lotdepth]{subfig}
+\DeclareUnicodeCharacter{200B}{}
+% --------------------------------------------------------------------------%
+% Configurações do PDF final                                                
+\definecolor{blue}{RGB}{41,5,195}
+\makeatletter
+\hypersetup{
+	%pagebackref=true,
+	pdftitle={\@title}, 
+	pdfauthor={\@author},
+	pdfsubject={\@title},
+	%pdfsubject={\imprimirpreambulo},
+	pdfcreator={LaTeX with abnTeX2},
+	pdfkeywords={abnt}{latex}{abntex}{abntex2}{\imprimirpalavraschave}, 
+	colorlinks=true,       		% false: boxed links; true: colored links
+	linkcolor=blue,          	% color of internal links
+	citecolor=blue,        		% color of links to bibliography
+	filecolor=magenta,      	% color of file links
+	urlcolor=blue,
+	bookmarksdepth=4
+}
+%\makeatother
+% --------------------------------------------------------------------------
+% Posiciona figuras e tabelas no topo da página quando adicionadas sozinhas
+% em um página em branco. Ver https://github.com/abntex/abntex2/issues/170
+%\makeatletter
+\setlength{\@fptop}{5pt} % Set distance from top of page to first float
+\makeatother
+% --------------------------------------------------------------------------
+% Formatação                                                                
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\apptocmd{\thebibliography}{\justifying}{}{} 
+\renewcommand{\ABNTEXsectionfont}{\bfseries}
+\titlespacing*{\chapter}{0pt}{0pt}{12pt}
+\titlespacing*{\section}{0pt}{6pt}{6pt}
+\titlespacing*{\subsection}{0pt}{6pt}{6pt}
+\titlespacing*{\subsubsection}{0pt}{6pt}{6pt}
+% --------------------------------------------------------------------------
+% Rearranja os finais de cada estrutura                                     
+\algrenewtext{EndWhile}{\algorithmicend\ \algorithmicwhile}
+\algrenewtext{EndFor}{\algorithmicend\ \algorithmicfor}
+\algrenewtext{EndIf}{\algorithmicend\ \algorithmicif}
+\algrenewtext{EndFunction}{\algorithmicend\ \algorithmicfunction}
+% --------------------------------------------------------------------------
+% Espaçamentos entre linhas e parágrafos                                    
+\setlength{\parindent}{1.3cm} % linha
+\setlength{\parskip}{0.2cm} % parágrafo, tente também \onelineskip
+% --------------------------------------------------------------------------
+% Informações de dados para CAPA e FOLHA DE ROSTO                           
+\prodtecnica{001 / 2020}
+\titulo{Manipulador Robótico JeRoTIMON}
+% \tiporelatorio{} 
+\nomeprojeto{Manipuladores Inteligentes}
+\outrossubtitulos{~} % opcional
+\autores{
+	Anderson Queiroz do Vale \\
+	Jéssica Lima Motta \\	
+	Mateus Santos Cerqueira\
+} 
+\newcommand{\autoresexternos}{
+	Lucas Cruz da Silva\\
+	Rebeca Tourinho Lima\\
+	Tiago Pereira de Souza\\
+	Marco Antonio dos Reis\
+}
+\local{Salvador\\Bahia, Brasil}
+\data{Novembro de 2020}
+\classificacao{( ) Confidencial  (X) Restrito  ( )  Uso Interno  ( ) Público}
+\revisao{01}
+\tabelacutter{000} 
+\palavraschave{1. Autonomous Navigation . 2. Manipulator. 3. Computer vision.}
+\classificacaoassunto{000} % Número de Classificação do assunto 
+%\parceirologo{logos/x.png}
+%------------------------------------------------------------------
+% Finalização das configurações da capa
+%
+%
+%------------------------------------------------------------------              
+% Acrônimos :: Chamar no texto como \ac{DoF}                                
+\begin{acgroupdef}[list=acronyms]
+	\acdef{AGV}{Automated Guided Vehicle}
+	\acdef{CAD}{Computer Aided Design}
+	\acdef{CCRoSA}{Centro de Competência de Robótica e Sistemas Autônomos}
+	\acdef{DoF}{Degrees of Freedom}
+	\acdef{FMECA}{Failure Modes, Effects and Critically Analysis}
+	\acdef{OMPL}{Open Motion Planning Library}
+	\acdef{OpenCV}{Open Source Computer Vision}
+	\acdef{ROS}{Robot Operating System}
+	\acdef{SOTA}{Study Of The Art}	
+	\acdef{URDF}{Unified Robot Description Format}	
+	
+	
+	%
+	%
+	%
+\end{acgroupdef}
+% --------------------------------------------------------------------------
+% Criação do sumário
+\makeindex
+%
+\begin{document}
+	\frenchspacing
+	\imprimircapa
+	\imprimircatalografica
+% --------------------------------------------------------------------------
+% Sumário executivo                                                         
+	\ABNTEXchapterfont\large\textbf{\execsummarytitlename}
+	\begin{flushleft}
+		\normalsize
+		\justify
+		\normalfont
+		O projeto de Manipuladores - Desafio 2.2, também conhecido como \textbf{JeRoTIMON Manipulator} configura-se: sob o Programa de Formação de Novos Talentos do \ac{CCRoSA} do Serviço Nacional de Aprendizagem Industrial, Departamento Regional da Bahia - Senai/DR/BA, sendo este o principal fomentador do programa.  O presente trabalho tem como impulsionador principal a capacitação de novos pesquisadores preparados para solucionar os mais diversos problemas relacionados a robótica e sistemas autônomos.
+
+		O projeto foi considerado como início técnico no dia 27 de Fevereiro de 2020, ocorrendo um hiato de desenvolvimento entre o período de 17 de março de 2020 a 07 de setembro de 2020 devido às medidas de isolamento social decorrentes da pandemia do novo corona vírus, havendo seu retorno no dia 08 de setembro de 2020. 
+		
+		O prazo de execução planejado foi de 50 dias.
+	\end{flushleft}
+	\clearpage
+%------------------------------------------------------------------
+% Resumo e abstract                                                         
+	\ABNTEXchapterfont\large\textbf{\resumoatitlename}
+	\begin{flushleft}
+		\normalsize
+		\justify
+		\normalfont
+		JeRoTIMON é um manipulador projetado, simulado e construído  com o intuito de atender às demandas relacionadas ao reconhecimento de marcadores visuais e acionamento de interruptores, chaves ou botões. Posteriormente, este mesmo manipulador robótico será integrado ao robô \textit{Warthog}, desenvolvido pela \textit{Clearpath Robotics},  com  o  propósito  de  realizar  a  atividade  de  investigação  em  ambiente  externo, desta vez participando de uma busca e desarme de bombas sem potencial destrutivo. O pacote de simulação do  manipulador foi  construído  através  do  software  \textit{Gazebo} aliado ao \textit{MoveIt} e a ferramenta de visualização \textit{Rviz}, possibilitando assim que as atividades  realizadas  no  mundo  real  tenham  sido previamente testadas em ambiente simulado onde é possível analisar os movimentos e limitações do manipulador. 
+
+	\end{flushleft}
+	\vspace*{1cm}
+	\newpage
+	%
+	\ABNTEXchapterfont\large\textbf{\resumobtitlename}
+	\begin{flushleft}
+		\normalsize
+		\justify
+		\normalfont
+		JeRoTIMON is a manipulator designed, simulated and built in order to meet demands related to the recognition of visual markers and activation of interrupters, switches or buttons.  Posteriorly, this manipulator robot arm will be attached in \textit{Warthog}, robot designed by \textit{Clearpath Robotics}, with the purpose of carrying out the research activity in an external environment, this time, integrating a searching and defusing non-destructive bombs.  The manipulator simulation package was built using software \textit{Gazebo}, allied to \textit{Moveit} and \textit{Rviz} visual tool, allowing that activities practiced in the real world have been previously tested in a computer environment where it is possible to analyze manipulator's movements and limitations. 
+	\end{flushleft}
+	\clearpage
+% --------------------------------------------------------------------------
+% Lista de figuras                                                          
+	\begin{flushleft}
+		\ABNTEXchapterfont\Large\textbf{\MakeUppercase\listadefigurasname}
+	\end{flushleft}
+	\vspace*{-36pt}
+	\pdfbookmark[0]{\listfigurename}{lof}
+	\normalsize
+	\listoffigures*
+	\cleardoublepage
+% --------------------------------------------------------------------------
+% Lista de tabelas                                                          
+	\begin{flushleft}
+		\ABNTEXchapterfont\Large\textbf{\MakeUppercase\listadetabelasname}
+	\end{flushleft}
+	\vspace*{-36pt}
+	\pdfbookmark[0]{\listtablename}{lot}
+	\normalsize
+	\listoftables*
+	\cleardoublepage
+% --------------------------------------------------------------------------
+% Lista de símbolos e abreviaturas                                          
+	\begin{flushleft}
+	\ABNTEXchapterfont\Large\textbf{\MakeUppercase\listadesimbolsabrevtitlename}
+		\noindent
+		\vspace*{-06pt}
+		\pdfbookmark[0]{\listadesiglasname}{lot}
+		\normalsize
+		\normalfont
+		\aclist[list=acronyms]
+	\end{flushleft}
+	\newpage
+% --------------------------------------------------------------------------
+% Tabela de conteúdo                                                        	
+	\begin{flushleft}
+		\ABNTEXchapterfont\Large\textbf{\MakeUppercase\glosariotitlename}
+	\end{flushleft}
+	%\pagebreak
+	\vspace*{-36pt}
+	\pdfbookmark[0]{\contentsname}{toc}
+	\normalsize
+	\normalfont
+	\tableofcontents*
+	\justify
+% --------------------------------------------------------------------------
+% Formatação, remover espaço depois dos títulos
+	\setlength\beforechapskip{-24pt}
+	\setlength\afterchapskip{12pt}
+	\textual
+	\pagestyle{plain}
+	\normalsize
+	\justify
+	\normalfont
+% --------------------------------------------------------------------------
+% Conteúdo do relatório  
+	\include{sections/01introducao}
+	\include{sections/02conceito}
+	\include{sections/03desenvolvimento}
+	\include{sections/04implementacao}
+	\include{sections/05resultados}
+	\include{sections/06confiabilidade}
+	\include{sections/07conhecimento}
+	\include{sections/08conclusao}
+% --------------------------------------------------------------------------
+% Referências
+	\cleardoublepage
+	\titleformat{\chapter}[display]{\vspace*{-24pt}\ABNTEXchapterfont\large\bfseries}{\chaptertitlename\ \thechapter}{12pt}{\Large}
+	\bibliography{bibliography}
+% --------------------------------------------------------------------------
+% Apêndices
+	\apendices
+	\justify
+	%
+	\chapter{Árvores de TF desconectadas}
+	\label{apend:tf1}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.39]{appendix/tf_desconectadas.png}
+		% \caption{Coordenadas.}
+		% \label{fig:coordenadas}
+	\end{figure}
+
+	\chapter{Árvores de TF conectadas}
+	\label{apend:tf2}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.4]{appendix/tf_conectadas.png}
+		% \caption{Coordenadas.}
+		% \label{fig:coordenadas}
+	\end{figure}
+
+	\chapter{Diagrama de nós do sistema}
+	\label{apend:rqt}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.2]{appendix/rosgraph.png}
+		% \caption{Coordenadas.}
+		% \label{fig:coordenadas}
+	\end{figure}
+
+	
+	\chapter{Propriedades de Massa do JeRoTIMON}
+	\label{apend:quest}
+	\begin{figure}[H]
+		\centering
+		\caption{Coordenadas.}
+		\includegraphics[scale=0.65]{appendix/coordinates.jpg}
+		\label{fig:coordenadas}
+	\end{figure}
+
+
+	\begin{figure}[H]
+		\centering
+		\caption{Link 0.}
+		\includegraphics[scale=1.2]{appendix/link0.jpg}
+		\label{fig:link0}
+	\end{figure}
+
+	\begin{itemize}
+		\item \textbf{Massa:} $3.72384654$ kg
+        \item \textbf{Volume:} $0.00413037 m^{3}$
+		\item \textbf{Área:} $0.28622123 m^{2}$
+		\item \textbf{Centro de  Massa:}
+		\begin{itemize}
+			\item X: $-0.00000147$ m
+			\item Y: $0.00000000$ m
+			\item Z: $0.03504069$ m
+		\end{itemize}				
+		\item \textbf{Momento de inércia:} kg $m^{2}$
+		\begin{itemize}
+			\item \textbf{Lxx:}	0.01072644 \textbf{Lxy:}-9.465e-9 \textbf{Lxz:}-3.247e-8				
+			\item \textbf{Lyx:} -9.465e-9 \textbf{Lyy:} 0.04865651 \textbf{Lyz:} 6.830e-13					
+			\item \textbf{Lzx:} -3.247e-8 \textbf{Lzy:} 6.830e-13 \textbf{Lzz:} 0.05388213					
+		\end{itemize}		
+	\end{itemize}
+
+	\begin{figure}[H]
+		\centering
+		\caption{Link 1.}
+		\includegraphics[scale=1.2]{appendix/link1.jpg}
+		\label{fig:link1}
+	\end{figure}
+
+	\begin{itemize}
+		\item \textbf{Massa:} $1.03781084$ kg
+		\item \textbf{Volume:} $0.00040169$  $m^{3}$
+		\item \textbf{Área:} $0.05853078$  $m^{2}$
+		\item \textbf{Centro de  Massa:}
+		\begin{itemize}
+			\item X: $0.00814457$ m
+			\item Y: $4.45597047e-8$ m
+			\item Z: $0.16022275$ m
+		\end{itemize}
+		\item \textbf{Momento de inércia:} kg $m^{2}$
+		\begin{itemize}
+			\item \textbf{Lxx:}	0.0005687 \textbf{Lxy:} 2.602e-10 \textbf{Lxz:}	-0.00004027			
+			\item \textbf{Lyx:} 2.602e-10 \textbf{Lyy:} 0.00166759 \textbf{Lyz:} -2.222e-10		
+			\item \textbf{Lzx:} -0.00004027 \textbf{Lzy:} -2.222e-10 \textbf{Lzz:} 0.00155695			
+		\end{itemize}	
+	\end{itemize}
+	
+
+	\begin{figure}[H]
+		\centering
+		\caption{Link 2.}
+		\includegraphics[scale=1.2]{appendix/link2.jpg}
+		\label{fig:link2}
+	\end{figure}
+
+	\begin{itemize}
+		\item \textbf{Massa:} $2.05026959$ kg		
+		\item \textbf{Volume:} $0.00077667$ $m^{3}$
+		\item \textbf{Área:} $0.29790369$ $m^{2}$
+		\item \textbf{Centro de  Massa:}
+		\begin{itemize}
+			\item X: $0.00294129$ m			
+			\item Y: $-0.01058166$ m			
+			\item Z: $0.48960322$ m			
+		\end{itemize}
+		
+		\item \textbf{Momento de inércia:} kg $m^{2}$
+		\begin{itemize}
+			\item \textbf{Lxx:} 0.06174738 \textbf{Lxy:} -0.00003476 \textbf{Lxz:} 0.00098626			
+			\item \textbf{Lyx:} -0.00003476	\textbf{Lyy:} 0.06319525 \textbf{Lyz:} 0.00311701			 
+			\item \textbf{Lzx:} 0.00098626 \textbf{Lzy:} 0.00311701 \textbf{Lzz:} 0.0034029			  
+		\end{itemize}
+	\end{itemize}
+	
+
+	\begin{figure}[H]
+		\centering
+		\caption{Link 3.}
+		\includegraphics[scale=1.2]{appendix/link3.jpg}
+		\label{fig:link3}
+	\end{figure}
+
+	\begin{itemize}
+		\item \textbf{Massa:} $1.83580505$ kg		
+		\item \textbf{Volume:} $0.00081683$ $m^{3}$
+		\item \textbf{Área:} $0.32055793$ $m^{2}$
+		\item \textbf{Centro de  Massa:}
+		\begin{itemize}
+			\item X: $0.00257384$ m
+			\item Y: $0.00207951$ m
+			\item Z: $0.91287054$ m			
+		\end{itemize}
+		
+		\item \textbf{Momento de inércia:} kg $m^{2}$
+		\begin{itemize}
+			\item \textbf{Lxx:} 0.03439469 \textbf{Lxy:} -0.00000261 \textbf{Lxz:} -0.00001194			  
+			\item \textbf{Lyx:} -0.00000261 \textbf{Lyy:} 0.03489631  \textbf{Lyz:} -0.0001288			  
+			\item \textbf{Lzx:} -0.00001194 \textbf{Lzy:} -0.0001288 \textbf{Lzz:} 0.0023687			 
+		\end{itemize}
+	\end{itemize}
+
+	\begin{figure}[H]
+		\centering
+		\caption{Link 4.}
+		\includegraphics[scale=1.2]{appendix/link4.jpg}
+		\label{fig:link4}
+	\end{figure}
+
+	\begin{itemize}
+		\item \textbf{Massa:} $0.39425655$ kg
+		\item \textbf{Volume:} $0.00014602$ $m^{3}$
+		\item \textbf{Área:} $0.03018022$ $m^{2}$
+		\item \textbf{Centro de  Massa:}
+		\begin{itemize}
+			\item X: $0.00257156$ m			
+			\item Y: $0.00133073$ m			
+			\item Z: $1.09673426$ m			
+		\end{itemize}
+		
+		\item \textbf{Momento de inércia:} kg $m^{2}$
+		\begin{itemize}
+			\item \textbf{Lxx:}	0.00028795 \textbf{Lxy:} 2.010e-10 \textbf{Lxz:} -8.166e-13			  
+			\item \textbf{Lyx:} 2.010e-10 \textbf{Lyy:} 0.00011981 \textbf{Lyz:} -0.00000446			  
+			\item \textbf{Lzx:} -8.166e-13 \textbf{Lzy:} -0.00000446 \textbf{Lzz:} 0.0002842			  
+		\end{itemize}
+	\end{itemize}
+
+	\begin{figure}[H]
+		\centering
+		\caption{Link 5.}
+		\includegraphics[scale=1.2]{appendix/link5.jpg}
+		\label{fig:link5}
+	\end{figure}
+
+	\begin{itemize}
+		\item \textbf{Massa:} $0.08694786$ kg
+		\item \textbf{Volume:} $0.0000322$ $m^{3}$
+		\item \textbf{Área:} $0.02435944$ $m^{2}$
+		\item \textbf{Centro de  Massa:}
+		\begin{itemize}
+			\item X: $0.00257155$ m			
+			\item Y: $0.00684212$ m			
+			\item Z: $1.13578562$ m
+			
+		\end{itemize}
+		
+		\item \textbf{Momento de inércia:} kg $m^{2}$
+		\begin{itemize}
+			\item \textbf{Lxx:}	0.00012963 \textbf{Lxy:} -5.235e-13  \textbf{Lxz:} -9.996e-14			   
+			\item \textbf{Lyx:} -5.235e-13 \textbf{Lyy:} 0.00003703 \textbf{Lyz:} 0.00000247			   
+			\item \textbf{Lzx:} -9.996e-14 \textbf{Lzy:} 0.00000247	 \textbf{Lzz:} 0.00012613			 
+		\end{itemize}
+	\end{itemize}
+
+	\chapter{Lista de suportes.}
+	\label{apend:frames}
+
+	\begin{table}[H]
+		\caption{Tabela de suportes}
+		\begin{adjustbox}{max width=\textwidth}
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+		\hline
+		\rowcolor[HTML]{EFEFEF} 
+		Imagem                 & Junta & Fornecedor     & Tipo                & Modelo               & Quantidade & Medidas (mm)          \\ \hline
+		\includegraphics[scale=0.12]{appendix/cantoneira.png}          & Id\_1 & CCRoSA         & Cantoneira          & Original             & 2          & 59 x 59 x 40.5        \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		\includegraphics[scale=0.12]{appendix/ffixper1.png}               & Id\_2 & CCRoSA         & Frame Perpendicular & Original             & 1          & 92.6 x 51.1 x 12      \\ \hline
+		\includegraphics[scale = 0.12]{appendix/fr54.png}            & Id\_2 & ROBOTIS        & Rolamento           & FRP54-I110K          & 1          & 54 x 54 x 5           \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		\includegraphics[scale = 0.12]{appendix/frot1.png}       & Id\_3 & ROBOTIS/CCRoSA & Frame de Rotação    & FRP54-H221K/Original & 1          & 105.5 x 138 x 54.3    \\ \hline
+		\includegraphics[scale=0.12]{appendix/fix2.png}       & Id\_3 & CCRoSA         & Fixador             & Original             & 1          & 95 x 54 x 54          \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		\includegraphics[scale = 0.12]{appendix/fix22.png}     & Id\_3 & CCRoSA         & Fixador             & Original             & 1          & 60 x 65.2 x 17        \\ \hline
+		\includegraphics[scale=0.12]{appendix/calco.png}                 & Id\_3 & CCRoSA         & Calço               & Original             & 1          & 54 x 54 x 2           \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		\includegraphics[scale = 0.12]{appendix/rolamentoorigi.png}        & Id\_3 & CCRoSA         & Rolamento           & Original             & 1          & 54 x 54 x 10          \\ \hline
+		\includegraphics[scale = 0.12]{appendix/frot2.png}      & Id\_4 & CCRoSA         & Frame de Rotação    & Original             & 1          & 85.03 x 89.46 x 148.2 \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		\includegraphics[scale = 0.12]{appendix/ffixper.png} & Id\_5 & ROBOTIS        & Frame Perpendicular & FRP42-A110K          & 1          & 48 x 42 x 11.5        \\ \hline
+		\includegraphics[scale = 0.12]{appendix/rolamento42.png}           & Id\_5 & ROBOTIS        & Rolamento           & FRP42-I110K          & 1          & 42 x 42 x 5           \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		\includegraphics[scale = 0.12]{appendix/frot3.png}       & Id\_6 & ROBOTIS        & Frame de Rotação    & FRP42-H121K          & 1          & 96 x 42 x 56.6        \\ \hline
+		\end{tabular}
+		\end{adjustbox}
+		\caption*{Fonte: Adaptado de \cite{dynamixel}}
+		\label{appen:lista_supor}
+		\end{table}
+	\chapter{Projeto mecânico}
+	\label{apend:proj_mec}
+	
+	O projeto mecânico do manipulador JeRoTIMON foi desenvolvido em duas etapas: Modelagem 3D e Cálculos Estáticos. A etapa de modelagem levou em consideração, além da análise estrutural e requisitos do cliente, as restrições físicas para que o manipulador pudesse ser anexado no UGV \textit{Warthog}. Por fim, foi realizado os cálculos de esforços estáticos em que analisou-se os esforços sofridos pelo manipulador, na situação em que exige uma maior carga dos atuadores, e com isso garanta a funcionalidade do mesmo. A seguir, será visto o desenho mecânico final do manipulador e como foi realizado a análise estática.
+
+	\section{Desenho mecânico}
+	O desenho do manipulador foi todo elaborado utilizando o \textit{software ``OnShape''}. A Figura \ref{des:3_vis} mostra o desenho técnico do manipulador com as vistas: frontal, lateral esquerda, superior e isométrica, contendo todos os detalhes necessários para execução do projeto. A figura \ref{des:iso} mostra a vista isométrica expandida do manipulador em sua posição \textit{home}.
+
+	\begin{figure}[H]
+		\centering
+		\caption{Desenho técnico do JeRoTIMON, vistas: frontal, lateral esquerda e superior.}
+		\includegraphics[scale=.55, angle=90]{appendix/3_vistas.png}
+		\caption*{Fonte: Autoria própria.}
+		\label{des:3_vis}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\caption{Desenho técnico do JeRoTIMON, vista isométrica.}
+		\includegraphics[scale=.55, angle=90]{appendix/isometrica.png}
+		\caption*{Fonte: Autoria própria.}
+		\label{des:iso}
+	\end{figure}
+
+	\section{Analise estática}
+
+	Para calcular a carga máxima suportada pelo manipulador foi realizada uma análise estática. Para isso, o mesmo foi posto na situação em que exige um maior esforço das juntas 0 e 1, conforme visto na Figura \ref{fig:esfoco}.
+
+	\begin{figure}[H]
+		\centering
+		\caption{Analise estática - condição de maior esforço exigido.}
+		\includegraphics[width=1\textwidth]{appendix/esforcos.png}
+		\caption*{fonte: Autoria Própria}
+		\label{fig:esfoco}
+	\end{figure}
+
+	Para analisar os esforços sofridos pela junta 1 (motor 2), admiti-se a extremidade esquerda como engastada e em sua situação de equilíbrio estático, como visto na Figura \ref{fig:esfoco}. A força resultante no eixo y é calculada da seguinte forma: 
+	$$ \sum F_{r_{y}} = 0 $$
+	$$F_{r_{y}} - 4,04 - 4,44 - 15,3 - 4,44 - 17 = 0$$
+	$$ F_{r_{y}} = \textbf{45,22 [N]}  $$
+
+	Para calcular o torque sofrido pela junta, as cargas distribuídas de cada componente do robô foram colocadas no seu centróide, conforme visto na Figura \ref{fig:esfoco_m}. 
+
+	\begin{figure}[H]
+		\centering
+		\caption{Analise estática - condição de maior esforço exigido (cargas no centróide).}
+		\includegraphics[width=1\textwidth]{appendix/esforcom.png}
+		\caption*{fonte: Autoria Própria}
+		\label{fig:esfoco_m}
+	\end{figure}
+
+	Em seguida, foi calculado o momento torsor gerado nos motores 1 e 2 por cada carga pontual da seguinte maneira: 
+
+	$$\sum M_{r} = 0 $$
+	$$M_{r} - (4,04\times0,05) - (4,44\times0,23) - (15,3\times0,41) - (4,44\times0,71) - (17\times0,89) = 0$$
+	$$M_{r} = \textbf{25,8 [N x m]} $$
+
+	Por fim, foi calculada a carga máxima suportada pelo manipulador, também conhecida por \textit{payload}. Para este cálculo, foi necessário obter e comparar as informações sobre o torque máximo fornecido pelo motor que compõe a junta 1 (PH54-200-S500-R) que é de 44,7 N x m, segundo o \textit{datasheet} disponível no anexo \ref{ann:esp_motors_ph54_200}. Sendo o alcance máximo de 0,89 m, temos:
+	$$T_{max/motor}= T_{sofrido} - T{payload}$$
+	$$44,7 = 25,8 - (F_{payload}\times0,89)$$
+	$$F_{payload}= 21,23 [N]$$
+
+	De acordo com a Segunda Lei de Newton e considerando a aceleração da gravidade como 10 $m/s^{2}$, obtemos uma carga máxima suportada pelo manipulador de:
+	$$F_{r} = m \times a $$
+	$$21,23 = m \times 10$$
+	$$m = \textbf{2,1 [kg]}$$
+
+
+
+	\chapter{Algoritmo de busca e acionamento do painel}
+	\label{apend:algorit}
+
+	
+	\lstinputlisting[language=C++, inputencoding=utf8/latin1, showspaces =false,	showstringspaces=false, breaklines=true, label=fonte, frame=single]{appendix/push_button.cpp}
+
+	
+	\chapter{Diagrama elétrico do JeRoTIMON}
+	\label{apend:diag_ele}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.72]{appendix/wiring_1.png}
+		\label{fig:wiring1}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.72]{appendix/wiring_2.png}
+		\label{fig:wiring2}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.72]{appendix/wiring_3.png}
+		\label{fig:wiring3}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.72]{appendix/wiring_4.png}
+		\label{fig:wiring4}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.72]{appendix/wiring_5.png}
+		\label{fig:wiring5}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.72]{appendix/wiring_6.png}
+		\label{fig:wiring6}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.72]{appendix/wiring_7.png}
+		\label{fig:wiring7}
+	\end{figure}
+
+
+	\chapter{Diagrama de conexão do JeRoTIMON}
+	\label{apend:connec_schem}
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.72]{appendix/connection_1.png}
+		\label{fig:connection1}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.72]{appendix/connection_2.png}
+		\label{fig:connection2}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.72]{appendix/connection_3.png}
+		\label{fig:connection3}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.72]{appendix/connection_4.png}
+		\label{fig:connection4}
+	\end{figure}
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[scale=0.72]{appendix/connection_5.png}
+		\label{fig:connection5}
+	\end{figure}
+
+	
+
+	%\includepdf[pages={{},-}]{appendix/listquest.pdf}
+	%\lipsum[1] % Comentar e adicionar apêndice aqui
+	%
+	%\chapter{Um assunto importante}
+	%\label{apend:assunto}
+	%\lipsum[1] % Comentar e adicionar apêndice aqui
+	
+
+% --------------------------------------------------------------------------
+% Anexos                                                                     
+	\anexos
+	\justify
+	%
+	\chapter{Especificações da câmera Dalsa Genie Nano}
+	\label{ann:relant}
+	
+	\includepdf[pages={1-3}]{annex/genie_nano.pdf}
+
+	\chapter{Especificações do motor \textit{Dynamixel} PH42-020-S300-R}
+	\label{ann:esp_motors_hp42}
+
+	\begin{table}[H]
+		\begin{adjustbox}{max width=\textwidth}
+		\begin{tabular}{|c|c|}
+		\hline
+		\rowcolor[HTML]{EFEFEF} 
+		\textbf{Item}                                                                               & \textbf{Especificação}                                                                          \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} \textbf{Microcontrolador}}                                            & {\color[HTML]{000000} ARM CORTEX-M4 (168 {[}MHz{]}, 32Bit)}                                     \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		{\color[HTML]{000000} \textbf{Motor}}                                                       & {\color[HTML]{000000} Coreless (Maxon)}                                                         \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} \textbf{Taxa de transmissão}}                                         & {\color[HTML]{000000} 9,600 {[}bps{]} $\sim$10.5 {[}Mbps{]}}                                    \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} }                                             & {\color[HTML]{000000} Torque Control Mode}                                                      \\ \cline{2-2} 
+		\rowcolor[HTML]{EFEFEF} 
+		\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} }                                             & {\color[HTML]{000000} Velocity Control Mode}                                                    \\ \cline{2-2} 
+		\rowcolor[HTML]{EFEFEF} 
+		\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} }                                             & {\color[HTML]{000000} Position Control Mode}                                                    \\ \cline{2-2} 
+		\rowcolor[HTML]{EFEFEF} 
+		\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} }                                             & {\color[HTML]{000000} Extended Position Control Mode}                                           \\ \cline{2-2} 
+		\rowcolor[HTML]{EFEFEF} 
+		\multirow{-5}{*}{\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} \textbf{Modos de operação}}} & {\color[HTML]{000000} PWM Control Mode (Voltage Control Mode)}                                  \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} \textbf{Massa}}                                                       & {\color[HTML]{000000} 340 {[}g{]}}                                                              \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		{\color[HTML]{000000} \textbf{Dimensões (L x A x P)}}                                       & {\color[HTML]{000000} 42 x 84 x 42 {[}mm{]}}                                                    \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} \textbf{Resolução}}                                                   & {\color[HTML]{000000} 607,500 {[}pulsos/rev{]}}                                                 \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		{\color[HTML]{000000} \textbf{Relação de transmissão}}                                      & {\color[HTML]{000000} 303.75:1}                                                                 \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} \textbf{Folga}}                                                       & {\color[HTML]{000000} \textless 6 {[}arcmin{]}, 0.1 {[}$^\circ${]}}                             \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		{\color[HTML]{000000} \textbf{Carga radial}}                                                & {\color[HTML]{000000} 280 {[}N{]} (10 {[}mm{]} afastado da face do eixo)}                       \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} \textbf{Carga axial}}                                                 & {\color[HTML]{000000} 100 {[}N{]}}                                                              \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		{\color[HTML]{000000} \textbf{Velocidade sem carga}}                                        & {\color[HTML]{000000} 32.7 {[}rev/min{]}}                                                       \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} \textbf{Corrente sem carga}}                                          & {\color[HTML]{000000} 0.57 {[}A{]}}                                                             \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		{\color[HTML]{000000} \textbf{Velocidade contínua}}                                         & {\color[HTML]{000000} 29.2 {[}rev/min{]}}                                                       \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} \textbf{Torque contínuo}}                                             & {\color[HTML]{000000} 5.1 {[}Nm{]}}                                                             \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		{\color[HTML]{000000} \textbf{Corrente contínua}}                                           & {\color[HTML]{000000} 1.5 {[}A{]}}                                                              \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} \textbf{Potência de saída}}                                           & {\color[HTML]{000000} 20 {[}W{]}}                                                               \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		{\color[HTML]{000000} \textbf{Temperatura de operação}}                                     & {\color[HTML]{000000} 5 $\sim$55 {[}$^\circ$C{]}}                                               \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} \textbf{Tensão de operação}}                                          & {\color[HTML]{000000} 24.0 {[}V{]}}                                                             \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		{\color[HTML]{000000} \textbf{Sinal de comando}}                                            & {\color[HTML]{000000} Pacotes digitais}                                                         \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} \textbf{Protocolo de comunicação}}                                    & {\color[HTML]{000000} RS485 Comunicação serial asíncrona (8bit, 1 bit de parada, sem paridade)} \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		{\color[HTML]{000000} \textbf{Conexão física}}                                              & {\color[HTML]{000000} RS485 Barramento multiponto}                                              \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} \textbf{ID}}                                                          & {\color[HTML]{000000} 253 ID (0 $\sim$252)}                                                     \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		{\color[HTML]{000000} \textbf{Corrente de espera}}                                          & {\color[HTML]{000000} 80 {[}mA{]}}                                                              \\ \hline
+		\end{tabular}
+		\end{adjustbox}
+		\caption{Especificações do motor \textit{Dynamixel} HP42-020-S300-R}
+		\end{table}
+	% \begin{table}[H]
+	% 	\begin{adjustbox}{max width=\textwidth}
+	% 	\begin{tabular}{|c|c|}
+	% 	\hline
+	% 	\rowcolor[HTML]{EFEFEF} 
+	% 	{\color[HTML]{000000} \textbf{Item}}                             & {\color[HTML]{000000} \textbf{Especificações}}                                           \\ \hline
+	% 	\rowcolor[HTML]{FFFFFF} 
+	% 	\textit{MCU}                                                     & \textit{ARM CORTEX-M3 (72 {[}MHz{]}, 32 Bit)}                                            \\ \hline
+	% 	\rowcolor[HTML]{EFEFEF} 
+	% 	\cellcolor[HTML]{EFEFEF}                                         & Enconder absoluto (sem contato) (12 Bit, 360 {[}$^ \circ ${])}                    \\ \cline{2-2} 
+	% 	\rowcolor[HTML]{EFEFEF} 
+	% 	\multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}Sensor de posição}      & Fabricante: \href{www.ams.com}{AMS}, Numero da peça : AS5045 \\ \hline
+	% 	\rowcolor[HTML]{FFFFFF} 
+	% 	Motor                                                            & \textit{Coreless (Maxon)}                                                                \\ \hline
+	% 	\rowcolor[HTML]{EFEFEF} 
+	% 	Taxa de transmissão                                              & 8,000 {[}bps{]} $\sim$4.5 {[}Mbps{]}                                                     \\ \hline
+	% 	\rowcolor[HTML]{FFFFFF} 
+	% 	Algoritmo de controle                                            & Controle PID                                                                             \\ \hline
+	% 	\rowcolor[HTML]{EFEFEF} 
+	% 	Resolução                                                        & 4096 {[}pulse/rev{]}                                                                     \\ \hline
+	% 	\rowcolor[HTML]{FFFFFF} 
+	% 	Folga                                                            & 20 {[}arcmin{]} (0.33 {[}$^\circ${]})                                                    \\ \hline
+	% 	\rowcolor[HTML]{EFEFEF} 
+	% 	Modo operacional                                                 & Modo junta (0 $\sim$ 360 {[}$^\circ${]}) Modo roda (Curso sem fim)                       \\ \hline
+	% 	\rowcolor[HTML]{FFFFFF} 
+	% 	Peso                                                             & 165 {[}g{]}                                                                              \\ \hline
+	% 	\rowcolor[HTML]{EFEFEF} 
+	% 	Dimensões (c x l x h)                                            & 40.2 x 65.1 x 46 {[}mm{]}                                                                \\ \hline
+	% 	\rowcolor[HTML]{FFFFFF} 
+	% 	Relação de engrenagem                                            & 225 : 1                                                                                  \\ \hline
+	% 	\rowcolor[HTML]{EFEFEF} 
+	% 	\cellcolor[HTML]{EFEFEF}                                         & 8.0 {[}Nm{]} (at 11.1 {[}V{]}, 4.8 {[}A{]})                                              \\ \cline{2-2} 
+	% 	\rowcolor[HTML]{EFEFEF} 
+	% 	\cellcolor[HTML]{EFEFEF}                                         & 8.4 {[}Nm{]} (at 12.0 {[}V{]}, 5.2 {[}A{]})                                              \\ \cline{2-2} 
+	% 	\rowcolor[HTML]{EFEFEF} 
+	% 	\multirow{-3}{*}{\cellcolor[HTML]{EFEFEF}Torque de Parada}       & 10.0 {[}Nm{]} (at 14.8 {[}V{]}, 6.3 {[}A{]})                                             \\ \hline
+	% 	\rowcolor[HTML]{FFFFFF} 
+	% 	\cellcolor[HTML]{FFFFFF}                                         & 41 {[}rev/min{]} (at 11.1 {[}V{]})                                                       \\ \cline{2-2} 
+	% 	\rowcolor[HTML]{FFFFFF} 
+	% 	\cellcolor[HTML]{FFFFFF}                                         & 45 {[}rev/min{]} (at 12.0 {[}V{]})                                                       \\ \cline{2-2} 
+	% 	\rowcolor[HTML]{FFFFFF} 
+	% 	\multirow{-3}{*}{\cellcolor[HTML]{FFFFFF}Velocidade (sem carga)} & 55 {[}rev/min{]} (at 14.8 {[}V{]})                                                       \\ \hline
+	% 	\rowcolor[HTML]{EFEFEF} 
+	% 	Carga radial                                                     & 40 {[}N{]} (10 {[}mm{]} afastado da face do eixo)                                        \\ \hline
+	% 	\rowcolor[HTML]{FFFFFF} 
+	% 	Carga axial                                                      & 20 {[}N{]}                                                                               \\ \hline
+	% 	\rowcolor[HTML]{EFEFEF} 
+	% 	Temperatura de operação                                          & -5 $\sim$+80 {[}$^\circ$C{]}                                                             \\ \hline
+	% 	\rowcolor[HTML]{FFFFFF} 
+	% 	Tensão de entrada                                                & 10.0 $\sim$14.8 {[}V{]} (Recomendado : 12.0 {[}V{]})                                     \\ \hline
+	% 	\rowcolor[HTML]{EFEFEF} 
+	% 	Sinal de Comando                                                 & Pacote digital                                                                           \\ \hline
+	% 	\rowcolor[HTML]{FFFFFF} 
+	% 	Tipo de protocolo                                                & RS485 Comunicação serial assíncrona com 8bit, 1stop, sem paridade                        \\ \hline
+	% 	\rowcolor[HTML]{EFEFEF} 
+	% 	Conexão física                                                   & RS485 Barramento multiponto                                                              \\ \hline
+	% 	\rowcolor[HTML]{FFFFFF} 
+	% 	\textit{ID}                                                      & 254 ID (0 $\sim$253)                                                                     \\ \hline
+	% 	\rowcolor[HTML]{EFEFEF} 
+	% 	\textit{Feedback}                                                & Posição, temperatura, carga, tensão de entrada, etc                                      \\ \hline
+	% 	\rowcolor[HTML]{FFFFFF} 
+	% 	\cellcolor[HTML]{FFFFFF}                                         & engrenagem toda de metal                                                                 \\ \cline{2-2} 
+	% 	\rowcolor[HTML]{FFFFFF} 
+	% 	\cellcolor[HTML]{FFFFFF}                                         & Plástico de engenharia (frente, meio e verso)                                            \\ \cline{2-2} 
+	% 	\rowcolor[HTML]{FFFFFF} 
+	% 	\multirow{-3}{*}{\cellcolor[HTML]{FFFFFF}Material}               & Metal (Frente)                                                                           \\ \hline
+	% 	\rowcolor[HTML]{EFEFEF} 
+	% 	Corrente de repouso                                              & 100 {[}mA{]}                                                                             \\ \hline
+	% 	\end{tabular}
+	% 	\end{adjustbox}
+	% 	\caption{Especificações do motor \textit{Dynamixel} HP42-020-S300-R}
+	% \end{table}
+
+	\includepdf[pages={1-3}]{annex/PH42-020-S300-R.pdf}
+
+	\chapter{Especificações do motor Dynamixel PH54-100-S500-R}
+	\label{ann:esp_motors_ph54_100}
+	
+
+		\begin{table}[H]
+			\begin{adjustbox}{max width=\textwidth}
+			\begin{tabular}{|c|c|}
+			\hline
+			\rowcolor[HTML]{EFEFEF} 
+			{\color[HTML]{333333} \textbf{Item}}                                               & {\color[HTML]{333333} \textbf{Especificação}}                                                   \\ \hline
+			\rowcolor[HTML]{FFFFFF} 
+			{\color[HTML]{000000} Microcontrolador}                                            & {\color[HTML]{000000} ARM CORTEX-M4 (168 {[}MHz{]}, 32Bit)}                                     \\ \hline
+			\rowcolor[HTML]{EFEFEF} 
+			{\color[HTML]{000000} Motor}                                                       & {\color[HTML]{000000} BLDC (Maxon)}                                                             \\ \hline
+			\rowcolor[HTML]{FFFFFF} 
+			{\color[HTML]{000000} Taxa de transmissão}                                         & {\color[HTML]{000000} 9,600 {[}bps{]} $\sim$10.5 {[}Mbps{]}}                                    \\ \hline
+			\rowcolor[HTML]{EFEFEF} 
+			\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} }                                    & {\color[HTML]{000000} Controle de torque}                                                       \\ \cline{2-2} 
+			\rowcolor[HTML]{EFEFEF} 
+			\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} }                                    & {\color[HTML]{000000} Controle de velocidade}                                                   \\ \cline{2-2} 
+			\rowcolor[HTML]{EFEFEF} 
+			\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} }                                    & {\color[HTML]{000000} Controle de posição}                                                      \\ \cline{2-2} 
+			\rowcolor[HTML]{EFEFEF} 
+			\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} }                                    & {\color[HTML]{000000} Controle de posição extendida (mais do que uma revolução)}                \\ \cline{2-2} 
+			\rowcolor[HTML]{EFEFEF} 
+			\multirow{-5}{*}{\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} Modos de operação}} & {\color[HTML]{000000} Controle por PWM (Controle de tensão)}                                    \\ \hline
+			\rowcolor[HTML]{FFFFFF} 
+			{\color[HTML]{000000} Massa}                                                       & {\color[HTML]{000000} 740 {[}g{]}}                                                              \\ \hline
+			\rowcolor[HTML]{EFEFEF} 
+			{\color[HTML]{000000} Dimensões (L x A x P)}                                       & {\color[HTML]{000000} 54 x 108 x 54 {[}mm{]}}                                                   \\ \hline
+			\rowcolor[HTML]{FFFFFF} 
+			{\color[HTML]{000000} Resolução}                                                   & {\color[HTML]{000000} 1,003,846 {[}pulsos/rev{]}}                                               \\ \hline
+			\rowcolor[HTML]{EFEFEF} 
+			{\color[HTML]{000000} Relação de transmissão}                                      & {\color[HTML]{000000} 501.923 : 1}                                                              \\ \hline
+			\rowcolor[HTML]{FFFFFF} 
+			{\color[HTML]{000000} Folga}                                                       & {\color[HTML]{000000} \textless 6 {[}arcmin{]}, 0.1 {[}$^\circ${]}}                             \\ \hline
+			\rowcolor[HTML]{EFEFEF} 
+			{\color[HTML]{000000} Carga radial}                                                & {\color[HTML]{000000} 370 {[}N{]} (10 {[}mm{]} afastado da face do eixo)}                       \\ \hline
+			\rowcolor[HTML]{FFFFFF} 
+			{\color[HTML]{000000} Carga axial}                                                 & {\color[HTML]{000000} 130 {[}N{]}}                                                              \\ \hline
+			\rowcolor[HTML]{EFEFEF} 
+			{\color[HTML]{000000} Velocidade sem carga}                                        & {\color[HTML]{000000} 33.3 {[}rev/min{]}}                                                       \\ \hline
+			\rowcolor[HTML]{FFFFFF} 
+			{\color[HTML]{000000} Corrente sem carga}                                          & {\color[HTML]{000000} 1.13 {[}A{]}}                                                             \\ \hline
+			\rowcolor[HTML]{EFEFEF} 
+			{\color[HTML]{000000} Velocidade contínua}                                         & {\color[HTML]{000000} 29.2 {[}rev/min{]}}                                                       \\ \hline
+			\rowcolor[HTML]{FFFFFF} 
+			{\color[HTML]{000000} Torque contínuo}                                             & {\color[HTML]{000000} 25.3 {[}Nm{]}}                                                            \\ \hline
+			\rowcolor[HTML]{EFEFEF} 
+			{\color[HTML]{000000} Corrente contínua}                                           & {\color[HTML]{000000} 5.5 {[}A{]}}                                                              \\ \hline
+			\rowcolor[HTML]{FFFFFF} 
+			{\color[HTML]{000000} Potência de saída}                                           & {\color[HTML]{000000} 100 {[}W{]}}                                                              \\ \hline
+			\rowcolor[HTML]{EFEFEF} 
+			{\color[HTML]{000000} Temperatura de operação}                                     & {\color[HTML]{000000} 5 $\sim$55 {[}$^\circ$C{]}}                                               \\ \hline
+			\rowcolor[HTML]{FFFFFF} 
+			{\color[HTML]{000000} Tensão de operação}                                          & {\color[HTML]{000000} 24.0 {[}V{]}}                                                             \\ \hline
+			\rowcolor[HTML]{EFEFEF} 
+			{\color[HTML]{000000} Sinal de comando}                                            & {\color[HTML]{000000} Pacotes digitais}                                                         \\ \hline
+			\rowcolor[HTML]{FFFFFF} 
+			{\color[HTML]{000000} Protocolo de comunicação}                                    & {\color[HTML]{000000} RS485 Comunicação serial asíncrona (8bit, 1 bit de parada, sem paridade)} \\ \hline
+			\rowcolor[HTML]{EFEFEF} 
+			{\color[HTML]{000000} Conexão física}                                              & {\color[HTML]{000000} RS485 Barramento multiponto}                                              \\ \hline
+			\rowcolor[HTML]{FFFFFF} 
+			{\color[HTML]{000000} ID}                                                          & {\color[HTML]{000000} 253 ID (0 $\sim$252)}                                                     \\ \hline
+			\rowcolor[HTML]{EFEFEF} 
+			{\color[HTML]{000000} Corrente de espera}                                          & {\color[HTML]{000000} 40 {[}mA{]}}                                                              \\ \hline
+			\end{tabular}
+			\end{adjustbox}
+			\caption{Especificações do motor \textit{Dynamixel} PH54-100-S500-R}
+			\end{table}
+
+	\includepdf[pages={1-3}]{annex/especificacaoh54100.pdf}
+
+
+
+
+	\chapter{Especificações do motor Dynamixel PH54-200-S500-R}
+	\label{ann:esp_motors_ph54_200}
+	
+	\begin{table}[H]
+		\begin{adjustbox}{max width=\textwidth}
+		\begin{tabular}{|c|c|}
+		\hline
+		\rowcolor[HTML]{EFEFEF} 
+		{\color[HTML]{333333} \textbf{Item}}                                               & {\color[HTML]{000000} \textbf{Especificação}}                                         \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} \textit{MCU}}                                                & {\color[HTML]{000000} \textit{ARM CORTEX-M4 (168 {[}MHz{]}, 32Bit)}}                   \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		{\color[HTML]{000000} Motor}                                                       & {\color[HTML]{000000} \textit{BLDC (Maxon)}}                                           \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} Taxa de transmissão}                                         & {\color[HTML]{000000} 9,600 {[}bps{]} $\sim$10.5 {[}Mbps{]}}                           \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} }                                    & {\color[HTML]{000000} Modo de controle de torque}                                      \\ \cline{2-2} 
+		\rowcolor[HTML]{EFEFEF} 
+		\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} }                                    & {\color[HTML]{000000} Modo de controle de velocidade}                                  \\ \cline{2-2} 
+		\rowcolor[HTML]{EFEFEF} 
+		\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} }                                    & {\color[HTML]{000000} Modo de controle de posição}                                     \\ \cline{2-2} 
+		\rowcolor[HTML]{EFEFEF} 
+		\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} }                                    & {\color[HTML]{000000} Modo de controle de posição estendida}                           \\ \cline{2-2} 
+		\rowcolor[HTML]{EFEFEF} 
+		\multirow{-5}{*}{\cellcolor[HTML]{EFEFEF}{\color[HTML]{000000} Modos de operação}} & {\color[HTML]{000000} Modo de controle PWM (modo de controle de tensão)}               \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} Peso}                                                        & {\color[HTML]{000000} 855 {[}g{]}}                                                     \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		{\color[HTML]{000000} Dimensões (c x l x h)}                                       & {\color[HTML]{000000} 54 x 126 x 54 {[}mm{]}}                                          \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} Resolução}                                                   & {\color[HTML]{000000} 1,003,846 {[}pulse/rev{]}}                                       \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		{\color[HTML]{000000} Relação de engrenagem}                                       & {\color[HTML]{000000} 501.923 : 1}                                                     \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} Folga}                                                       & {\color[HTML]{000000} \textless 6 {[}arcmin{]}, 0.1 {[}$^\circ${]}}                    \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		{\color[HTML]{000000} Carga radial}                                                & {\color[HTML]{000000} 370 {[}N{]} (10 {[}mm{]} afastado da face do eixo)}              \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} Carga axial}                                                 & {\color[HTML]{000000} 130 {[}N{]}}                                                     \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		{\color[HTML]{000000} Velocidade (sem carga)}                                      & {\color[HTML]{000000} 33.1 {[}rev/min{]}}                                              \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} Corrente (sem carga)}                                        & {\color[HTML]{000000} 1.65 {[}A{]}}                                                    \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		{\color[HTML]{000000} Velocidade contínua}                                         & {\color[HTML]{000000} 29.0 {[}rev/min{]}}                                              \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} Torque contínuo}                                             & {\color[HTML]{000000} 44.7 {[}Nm{]}}                                                   \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		{\color[HTML]{000000} Corrente contínua}                                           & {\color[HTML]{000000} 9.3 {[}A{]}}                                                     \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} Saída}                                                       & {\color[HTML]{000000} 200 {[}W{]}}                                                     \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		{\color[HTML]{000000} Temperatura de operação}                                     & {\color[HTML]{000000} 5 $\sim$55 {[}$^\circ$C{]}}                                      \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} Tensão operacional}                                          & {\color[HTML]{000000} 24.0 {[}V{]}}                                                    \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		{\color[HTML]{000000} Sinal de comando}                                            & {\color[HTML]{000000} Pacote digital}                                                  \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} Tipo de protocolo}                                           & {\color[HTML]{000000} RS485 Comunicação Serial Assíncrona (8bit, 1stop, Sem paridade)} \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		{\color[HTML]{000000} Conexão física}                                              & {\color[HTML]{000000} RS485 Barramento multiponto}                                     \\ \hline
+		\rowcolor[HTML]{FFFFFF} 
+		{\color[HTML]{000000} \textit{ID}}                                                 & {\color[HTML]{000000} 253 ID (0 $\sim$252)}                                            \\ \hline
+		\rowcolor[HTML]{EFEFEF} 
+		{\color[HTML]{000000} Corrente de repouso}                                         & {\color[HTML]{000000} 40 {[}mA{]}}                                                     \\ \hline
+		\end{tabular}
+		\end{adjustbox}
+		\caption{Especificações do motor \textit{Dynamixel} PH54-200-S500-R}
+	\end{table}
+
+
+	\includepdf[pages={1-3}]{annex/especificacaoh54.pdf}
+
+
+	
+
+
+\end{document} 

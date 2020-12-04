@@ -1,0 +1,268 @@
+\chapter{GESTÃO DO CONHECIMENTO}
+\label{chap:conhec}
+
+Neste capítulo estão descritas as lições aprendidas durante o processo de desenvolvimento do protótipo que foram criadas a partir da comparação entre o que era esperado e o que realmente aconteceu em cada etapa do projeto. Esta sub-seção engloba desde a fase inicial do planejamento até a construção do modelo real.
+
+Além das lições aprendidas, as seções \ref{sec:guia_simulacao} e \ref{sec:guia_real} trazem os guias de uso para a simulação e o modelo real, respectivamente, com o propósito de auxiliar o usuário na replicação dos experimentos realizados neste relatório.
+
+%------------------------------------------------------------------
+\section{Lições aprendidas}
+\label{sec:licap}
+
+A Tabela \ref{tab:licoes_aprendidas}  mostra como foi estruturada cada lição aprendida abordando os seguintes aspectos: Tema, Fase, Impacto, O que ocorreu?, Como resolveu?, Resultados e Recomendações para os próximos projetos. O objetivo deste estudo é a correção dos impactos negativos para os projetos subsequentes.
+
+
+\begin{table}[H]
+  \caption{Lições aprendidas}
+  \begin{adjustbox}{max width=\textwidth}
+  \begin{tabular}{|c|c|c|c|c|c|c|}
+  \hline
+  \rowcolor[HTML]{EFEFEF} 
+  \multicolumn{7}{|c|}{\cellcolor[HTML]{EFEFEF}\textbf{LIÇÕES APRENDIDAS}} \\ \hline
+  \rowcolor[HTML]{FFFFFF} 
+  \textbf{Tema} & \textbf{Fase} & \textbf{Impacto} & \textbf{O que ocorreu?} & \textbf{Como resolveu?} & \textbf{Resultados} & \textbf{\begin{tabular}[c]{@{}c@{}}Recomendações para\\ os próximos projetos\end{tabular}} \\ \hline
+  \rowcolor[HTML]{EFEFEF} 
+  Gestão & Planejamento & Negativo & \begin{tabular}[c]{@{}c@{}}Ausência de uma \\ metodologia\\ de trabalho\end{tabular} & \begin{tabular}[c]{@{}c@{}}Reunião com foco em definir\\ metodologia de projeto\end{tabular} & \begin{tabular}[c]{@{}c@{}}Evolução na \\ comunicação dos \\ membros\end{tabular} & \begin{tabular}[c]{@{}c@{}}Antes de começar o projeto\\ realizar reunião para definição\\ de metodologia\end{tabular} \\ \hline
+  \rowcolor[HTML]{FFFFFF} 
+  Gestão & Planejamento & Negativo & \begin{tabular}[c]{@{}c@{}}Ausência de uma ferramenta\\ para gestão de projeto\end{tabular} & \begin{tabular}[c]{@{}c@{}}Escolha de uma ferramenta\\ gratuita e de fácil aplicação\end{tabular} & \begin{tabular}[c]{@{}c@{}}Melhoria na\\ organização\\ das atividades\end{tabular} & \begin{tabular}[c]{@{}c@{}}Definição prévia de uma\\ ferramenta de gestão de \\ projeto\end{tabular} \\ \hline
+  \rowcolor[HTML]{EFEFEF} 
+  Gestão & Execução & Negativo & \begin{tabular}[c]{@{}c@{}}Montagens e desmontagens\\ do manipulador\end{tabular} & \begin{tabular}[c]{@{}c@{}}Planejamento\\ prévio das atividades\end{tabular} & \begin{tabular}[c]{@{}c@{}}Otimização do \\ tempo\end{tabular} & \begin{tabular}[c]{@{}c@{}}Cronograma definido \\ as atividades a serem \\ realizadas\end{tabular} \\ \hline
+  \rowcolor[HTML]{FFFFFF} 
+  Tecnológico & Execução & Negativo & \begin{tabular}[c]{@{}c@{}}Falha no \\ dimensionamento\\ das peças\end{tabular} & \begin{tabular}[c]{@{}c@{}}Consultoria sobre\\ materiais aplicados\\ na confecção\end{tabular} & \begin{tabular}[c]{@{}c@{}}Obtenção de peças\\ com maior resistência\\ mecânica\end{tabular} & \begin{tabular}[c]{@{}c@{}}Pesquisa e consultoria prévia\\ antes da modelagem das \\ peças\end{tabular} \\ \hline
+  \rowcolor[HTML]{EFEFEF} 
+  Tecnológico & Execução & Negativo & \begin{tabular}[c]{@{}c@{}}Dificuldade em planejamento\\ de trajetória para \\ determinadas poses do robô\end{tabular} & \begin{tabular}[c]{@{}c@{}}Utilização do plugin\\ Track-IK\end{tabular} & \begin{tabular}[c]{@{}c@{}}Maior eficiência\\ de planejamento\end{tabular} & \begin{tabular}[c]{@{}c@{}}Pesquisa e consultoria prévia\\ do pacote mais adequado\\ para o projeto\end{tabular} \\ \hline
+  \rowcolor[HTML]{FFFFFF} 
+  Tecnológico & Execução & Negativo & \begin{tabular}[c]{@{}c@{}}Motor dynamixel \\ (H54-200-S500-R PRO)\\ parou de funcionar\end{tabular} & \begin{tabular}[c]{@{}c@{}}Realizado a Análise 8D \\ para fazer investigação do\\ ocorrido\end{tabular} & \begin{tabular}[c]{@{}c@{}}Compreensão de \\ que há procedimentos a serem feitos \\ antes de utilizar um produto\end{tabular} & \begin{tabular}[c]{@{}c@{}}Realizar leitura meticulosa \\ do manual do produto \\ para saber quais são os \\ procedimentos\end{tabular} \\ \hline
+  \end{tabular}
+  \end{adjustbox}
+  \legend{Fonte: Autoria própria.}
+  \label{tab:licoes_aprendidas}
+\end{table}
+
+
+
+
+%------------------------------------------------------------------
+\section{Guia de uso para simulação}
+\label{sec:guia_simulacao}
+
+Para replicar a simulação do manipulador robótico Timon-HM é necessário seguir os passos descritos nesta seção. Recomenda-se a utilização do Ubuntu 18.04 LTS e o \textit{\acs{ROS}} Melodic Morenia.
+
+Antes de inserir o pacote do manipulador no \textit{workspace} é fundamental que sejam instalados os pacotes requeridos para este. Primeiramente, no terminal, segue-se os comandos listados:
+
+\begin{itemize}
+  \item Instalar MoveIt:
+  \begin{lstlisting}[frame=single]
+    $ sudo apt-get install ros-melodic-moveit
+  \end{lstlisting}
+  \item Instalar pacote de ferramentas visuais do MoveIt:
+  \begin{lstlisting}[frame=single]
+    $ sudo apt-get install ros-melodic-moveit-visual-tools
+  \end{lstlisting}
+  \item Instalar TRAC-IK para resolução da cinemática:
+  \begin{lstlisting}[frame=single]
+    $ sudo apt-get install ros-melodic-trac-ik-kinematics-
+    plugin
+  \end{lstlisting}
+  \item Instalar pacote de controle no \textit{Gazebo} \textit{\acs{ROS}}:
+  \begin{lstlisting}[frame=single]
+    $ sudo apt-get install ros-melodic-gazebo-ros-control
+  \end{lstlisting}
+  \item Instalar pacote do controlador do \textit{\acs{ROS}}:
+  \begin{lstlisting}[frame=single]
+    $ sudo apt-get install ros-melodic-controller-*
+  \end{lstlisting}
+  \item Instalar pacote controlador de posição do \textit{\acs{ROS}}:
+  \begin{lstlisting}[frame=single]
+    $ sudo apt-get install ros-melodic-position-controller
+  \end{lstlisting}
+  \item Instalar pacote controlador de esforço do \textit{\acs{ROS}}:
+  \begin{lstlisting}[frame=single]
+    $ sudo apt-get install ros-melodic-effort-controller
+  \end{lstlisting}
+  \item Instalar pacote de juntas do \textit{\acs{ROS}}:
+  \begin{lstlisting}[frame=single]
+    $ sudo apt install ros-melodic-joint-*
+  \end{lstlisting}
+  \item Instalar pacote de controle do \textit{\acs{ROS}}:
+  \begin{lstlisting}[frame=single]
+    $ sudo apt install ros-melodic-ros-control
+  \end{lstlisting}
+\end{itemize}
+
+
+Antes de instalar o pacote \textit{bir\_marker\_localization} é necessária a instalação do \textit{\acs{OpenCV}} versão 3.3.1, este possui o guia de instalação próprio disponível em:
+
+\url{https://www.learnopencv.com/install-opencv3-on-ubuntu/}.
+
+Após a instalação do \textit{\acs{OpenCV}}, para clonar o repositório do \textit{bir\_marker\_localization} segue-as as seguintes etapas, no terminal:
+
+\begin{itemize}
+  \item Criar um \textit{workspace} para adicionar dentro deste os pacotes que serão usados na simulação.
+  \begin{lstlisting}[frame=single]
+    $ mkdir nomedoworkspace_ws
+  \end{lstlisting}
+  \item Entrar no \textit{workspace}:
+  \begin{lstlisting}[frame=single]
+    $ cd nomedoworkspace_ws
+  \end{lstlisting}
+  \item Criar a pasta \textit{source}\footnote{Pasta onde contém os arquivos fonte.}:
+  \begin{lstlisting}[frame=single]
+    $ mkdir src
+  \end{lstlisting}
+  \item Entrar no \textit{source}:
+  \begin{lstlisting}[frame=single]
+    $ cd src
+  \end{lstlisting}
+  \item Clonar o repositório \textit{Bir Marker Localization} para \textit{workspace} (Verificar qual a \textit{branch} estável):
+  \begin{lstlisting}[frame=single]
+    $ git clone https://github.com/Brazilian-Institute-of-
+    Robotics/bir_marker_localization.git
+  \end{lstlisting}
+  
+  \item Clonar o pacote do manipulador para dentro da pasta src:
+  \begin{lstlisting}[frame=single]
+    $ git clone -b feature/simulation https://github.com/Brazilian-Institute-of-
+    Robotics/timon_hm_manipulator.git
+  \end{lstlisting}
+
+  \item Clonar o pacote do \textit{Open Manipulator} para dentro da pasta src:
+  \begin{lstlisting}[frame=single]
+    $ git clone https://github.com/ROBOTIS-GIT/open_
+    manipulator_msgs.git
+  \end{lstlisting}
+
+  \item Retornar para a raiz do \textit{workspace}:
+  \begin{lstlisting}[frame=single]
+    $ cd ..
+  \end{lstlisting}
+ 
+  \item Compilar o \textit{workspace}:
+  \begin{lstlisting}[frame=single]
+    $ catkin_make
+  \end{lstlisting}
+  \item Ativar o ambiente virtual do \textit{workspace}:
+  \begin{lstlisting}[frame=single]
+    $ source devel/setup.bash
+  \end{lstlisting}
+\end{itemize}
+
+Após realizar os procedimentos citados o \textit{workspace} estará configurado para executar a simulação, com os seguintes comandos (cada comando terá que ser inserido em uma aba do terminal):
+
+\begin{itemize}
+  \item Iniciar a simulação no \textit{Gazebo}:
+  \begin{lstlisting}[frame=single]
+    $ roslaunch manipulator_gazebo gazebo.launch
+  \end{lstlisting}
+  \item Iniciar pacote MoveIt do Timon-HM:
+  \begin{lstlisting}[frame=single]
+    $ roslaunch manipulator_gazebo moveit_demo.launch
+  \end{lstlisting}
+  \item Iniciar o bir\_marker\_localization:
+  \begin{lstlisting}[frame=single]
+   $ roslaunch timon_demo bir_marker_localization.launch
+  \end{lstlisting}
+  \item Iniciar o algoritmo de busca do marcador visual e para acionar o painel elétrico:
+  \begin{lstlisting}[frame=single]
+    $ roslaunch timon_demo push_button_simulation.launch
+  \end{lstlisting}  
+\end{itemize}
+
+
+
+
+%------------------------------------------------------------------
+\section{Guia de uso para o modelo real}
+\label{sec:guia_real}
+
+Para replicar o modelo real do manipulador a versão do Ubuntu, do \textit{\acs{ROS}} e os pacotes necessários são os mesmos descritos na seção \ref{sec:guia_simulacao}. Após a instalação dos pacotes, a seguir estão descritas as etapas subsequentes:
+
+\begin{itemize}
+  % \item Instalar os pacotes:
+  % \begin{lstlisting}[frame=single]
+  %   $ sudo apt install ros-melodic-ros-control 
+  %   ros-melodic-gazebo-ros-control 
+  %   ros-melodic-controller-manager 
+  %   ros-melodic-joint-trajectory-controller 
+  %   ros-melodic-joint-state-controller 
+  %   ros-melodic-position-controllers 
+  %   ros-melodic-trac-ik-kinematics-plugin
+  % \end{lstlisting}
+  \item Criar \textit{workspace} e a pasta \textit{source}:
+  \begin{lstlisting}[frame=single]
+    $ mkdir -p catkin_ws/src
+  \end{lstlisting} 
+  \item Entrar no \textit{workspace} e no \textit{source}:
+  \begin{lstlisting}[frame=single]
+    $ cd  catkin_ws/src
+  \end{lstlisting} 
+  \item Clonar para dentro da pasta \textit{source} o repositório do manipulador:
+  \begin{lstlisting}[frame=single]
+    $ git clone https://github.com/Brazilian-Institute-of-
+    Robotics/timon_hm_manipulator.git 
+  \end{lstlisting}
+  \item Clonar para dentro do \textit{source} o repositório do \textit{Bir Marker Localization}:
+  \begin{lstlisting}[frame=single]
+    $ git clone -b final_settings https://github.com/
+    Brazilian-Institute-of-Robotics/
+    bir_marker_localization.git
+  \end{lstlisting}  
+  \item Clonar para dentro do \textit{source} o repositório do \textit{Open Manipulator}:
+  \begin{lstlisting}[frame=single]
+    $ git clone https://github.com/ROBOTIS-GIT/
+    open_manipulator_msgs.git
+  \end{lstlisting} 
+  \item Clonar para dentro do \textit{source} o repositório do \textit{Dynamixel workbench}:
+  \begin{lstlisting}[frame=single]
+    $ git clone https://github.com/ROBOTIS-GIT/dynamixel-
+    workbench.git
+  \end{lstlisting}
+  \item Clonar para dentro do \textit{source} o repositório da câmera \textit{Teledyne}:
+  \begin{lstlisting}[frame=single]
+    $ git clone -b refactor_code https://github.com/Brazilian
+    -Institute-of-Robotics/def_cam_teledyne_nano.git
+  \end{lstlisting}
+
+  \item Retornar para a raiz do \textit{workspace}:
+  \begin{lstlisting}[frame=single]
+    $ cd ..
+  \end{lstlisting}
+  \item Compilar o \textit{workspace}:
+  \begin{lstlisting}[frame=single]
+    $ catkin_make
+  \end{lstlisting}
+  \item Ativar o ambiente virtual do \textit{workspace}:
+  \begin{lstlisting}[frame=single]
+    $ source devel/setup.bash
+  \end{lstlisting}
+\end{itemize}
+
+Para executar a aplicação é necessário realizar os seguintes comandos (cada comando terá que ser inserido em uma aba do terminal):
+
+\begin{itemize}
+  \item Iniciar os controladores do manipulador:
+  \begin{lstlisting}[frame=single]
+    $ roslaunch timon_arm_controller dxl_controllers.launch
+  \end{lstlisting}
+  \begin{lstlisting}[frame=single]
+    $ roslaunch timon_arm_controller moveit.launch
+  \end{lstlisting}
+  \begin{lstlisting}[frame=single]
+    $ roslaunch timon_arm_controller dxl_moveit_bridge.launch
+  \end{lstlisting}
+
+  \item Iniciar a câmera:
+  \begin{lstlisting}[frame=single]
+    $ roslaunch def_cam_teledyne_nano camera_example.launch
+  \end{lstlisting}
+
+  \item Iniciar o \textit{Bir Maker Localization}:
+  \begin{lstlisting}[frame=single]
+    $ roslaunch timon_demo bir_marker_localization.launch
+  \end{lstlisting}
+  
+  \item Executar a missão:
+  \begin{lstlisting}[frame=single]
+    $ roslaunch timon_demo push_button_real.launch
+  \end{lstlisting}
+\end{itemize}
