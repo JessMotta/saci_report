@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.12.2)  4 DEC 2020 11:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2020.12.2)  7 DEC 2020 10:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1641,7 +1641,7 @@ l.199 	\clearpage
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.211 	\newpage
+l.210 	\newpage
                 [2
 
 ] [3] (/home/jess/docs_saci/saci_report/report.lof [4
@@ -1653,7 +1653,7 @@ l.211 	\newpage
 ]pdfTeX warning (ext4): destination with the same identifier (name{lot.0}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.247 		\pdfbookmark[0]{\listadesiglasname}{lot}
+l.246 		\pdfbookmark[0]{\listadesiglasname}{lot}
                                                  [9] (/home/jess/docs_saci/saci_report/report.toc
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <14.4> on input line 3.
@@ -2045,10 +2045,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--25
 <appendix/tf_desconectadas.png, id=1024, 1318.17468pt x 1583.9175pt>
 File: appendix/tf_desconectadas.png Graphic file (type png)
 <use appendix/tf_desconectadas.png>
-Package pdftex.def Info: appendix/tf_desconectadas.png  used on input line 298.
+Package pdftex.def Info: appendix/tf_desconectadas.png  used on input line 297.
 (pdftex.def)             Requested size: 514.08606pt x 617.72534pt.
 
-Overfull \hbox (59.08606pt too wide) in paragraph at lines 298--301
+Overfull \hbox (59.08606pt too wide) in paragraph at lines 297--300
  [][] 
  []
 
@@ -2064,10 +2064,10 @@ Overfull \vbox (1.93681pt too high) has occurred while \output is active []
 <appendix/tf_conectadas.png, id=1036, 1265.47781pt x 1472.50125pt>
 File: appendix/tf_conectadas.png Graphic file (type png)
 <use appendix/tf_conectadas.png>
-Package pdftex.def Info: appendix/tf_conectadas.png  used on input line 307.
+Package pdftex.def Info: appendix/tf_conectadas.png  used on input line 306.
 (pdftex.def)             Requested size: 506.18216pt x 588.99008pt.
 
-Overfull \hbox (51.18216pt too wide) in paragraph at lines 307--310
+Overfull \hbox (51.18216pt too wide) in paragraph at lines 306--309
  [][] 
  []
 
@@ -2079,7 +2079,7 @@ Overfull \hbox (51.18216pt too wide) in paragraph at lines 307--310
 <appendix/rosgraph.png, id=1047, 2053.6725pt x 3123.67pt>
 File: appendix/rosgraph.png Graphic file (type png)
 <use appendix/rosgraph.png>
-Package pdftex.def Info: appendix/rosgraph.png  used on input line 316.
+Package pdftex.def Info: appendix/rosgraph.png  used on input line 315.
 (pdftex.def)             Requested size: 410.72723pt x 624.72295pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2091,12 +2091,12 @@ Overfull \vbox (8.93442pt too high) has occurred while \output is active []
 <appendix/coordinates.jpg, id=1058, 642.4pt x 356.33125pt>
 File: appendix/coordinates.jpg Graphic file (type jpg)
 <use appendix/coordinates.jpg>
-Package pdftex.def Info: appendix/coordinates.jpg  used on input line 327.
+Package pdftex.def Info: appendix/coordinates.jpg  used on input line 326.
 (pdftex.def)             Requested size: 417.55505pt x 231.61256pt.
 <appendix/link0.jpg, id=1059, 352.1958pt x 139.722pt>
 File: appendix/link0.jpg Graphic file (type jpg)
 <use appendix/link0.jpg>
-Package pdftex.def Info: appendix/link0.jpg  used on input line 335.
+Package pdftex.def Info: appendix/link0.jpg  used on input line 334.
 (pdftex.def)             Requested size: 422.63286pt x 167.66554pt.
  [75
 
@@ -2104,30 +2104,30 @@ Package pdftex.def Info: appendix/link0.jpg  used on input line 335.
 <appendix/link1.jpg, id=1065, 352.1958pt x 139.722pt>
 File: appendix/link1.jpg Graphic file (type jpg)
 <use appendix/link1.jpg>
-Package pdftex.def Info: appendix/link1.jpg  used on input line 360.
+Package pdftex.def Info: appendix/link1.jpg  used on input line 359.
 (pdftex.def)             Requested size: 422.63286pt x 167.66554pt.
 <appendix/link2.jpg, id=1066, 352.1958pt x 139.722pt>
 File: appendix/link2.jpg Graphic file (type jpg)
 <use appendix/link2.jpg>
-Package pdftex.def Info: appendix/link2.jpg  used on input line 386.
+Package pdftex.def Info: appendix/link2.jpg  used on input line 385.
 (pdftex.def)             Requested size: 422.63286pt x 167.66554pt.
  [76 </home/jess/docs_saci/saci_report/appendix/link1.jpg>]
 <appendix/link3.jpg, id=1071, 352.1958pt x 139.722pt>
 File: appendix/link3.jpg Graphic file (type jpg)
 <use appendix/link3.jpg>
-Package pdftex.def Info: appendix/link3.jpg  used on input line 413.
+Package pdftex.def Info: appendix/link3.jpg  used on input line 412.
 (pdftex.def)             Requested size: 422.63286pt x 167.66554pt.
  [77 </home/jess/docs_saci/saci_report/appendix/link2.jpg> </home/jess/docs_saci/saci_report/appendix/link3.jpg>]
 <appendix/link4.jpg, id=1076, 352.1958pt x 139.722pt>
 File: appendix/link4.jpg Graphic file (type jpg)
 <use appendix/link4.jpg>
-Package pdftex.def Info: appendix/link4.jpg  used on input line 439.
+Package pdftex.def Info: appendix/link4.jpg  used on input line 438.
 (pdftex.def)             Requested size: 422.63286pt x 167.66554pt.
  [78 </home/jess/docs_saci/saci_report/appendix/link4.jpg>]
 <appendix/link5.jpg, id=1081, 352.1958pt x 139.722pt>
 File: appendix/link5.jpg Graphic file (type jpg)
 <use appendix/link5.jpg>
-Package pdftex.def Info: appendix/link5.jpg  used on input line 465.
+Package pdftex.def Info: appendix/link5.jpg  used on input line 464.
 (pdftex.def)             Requested size: 422.63286pt x 167.66554pt.
  [79 </home/jess/docs_saci/saci_report/appendix/link5.jpg>] [80
 
@@ -2135,62 +2135,62 @@ Package pdftex.def Info: appendix/link5.jpg  used on input line 465.
 <appendix/cantoneira.png, id=1090, 485.815pt x 516.93124pt>
 File: appendix/cantoneira.png Graphic file (type png)
 <use appendix/cantoneira.png>
-Package pdftex.def Info: appendix/cantoneira.png  used on input line 499.
+Package pdftex.def Info: appendix/cantoneira.png  used on input line 498.
 (pdftex.def)             Requested size: 58.29527pt x 62.02907pt.
 <appendix/ffixper1.png, id=1091, 630.355pt x 398.48875pt>
 File: appendix/ffixper1.png Graphic file (type png)
 <use appendix/ffixper1.png>
-Package pdftex.def Info: appendix/ffixper1.png  used on input line 501.
+Package pdftex.def Info: appendix/ffixper1.png  used on input line 500.
 (pdftex.def)             Requested size: 75.63933pt x 47.81657pt.
 <appendix/fr54.png, id=1092, 544.0325pt x 462.72874pt>
 File: appendix/fr54.png Graphic file (type png)
 <use appendix/fr54.png>
-Package pdftex.def Info: appendix/fr54.png  used on input line 502.
+Package pdftex.def Info: appendix/fr54.png  used on input line 501.
 (pdftex.def)             Requested size: 65.28108pt x 55.52504pt.
 <appendix/frot1.png, id=1093, 531.9875pt x 472.76625pt>
 File: appendix/frot1.png Graphic file (type png)
 <use appendix/frot1.png>
-Package pdftex.def Info: appendix/frot1.png  used on input line 504.
+Package pdftex.def Info: appendix/frot1.png  used on input line 503.
 (pdftex.def)             Requested size: 63.83574pt x 56.72949pt.
 <appendix/fix2.png, id=1094, 440.64626pt x 570.13pt>
 File: appendix/fix2.png Graphic file (type png)
 <use appendix/fix2.png>
-Package pdftex.def Info: appendix/fix2.png  used on input line 505.
+Package pdftex.def Info: appendix/fix2.png  used on input line 504.
 (pdftex.def)             Requested size: 52.87526pt x 68.41264pt.
 <appendix/fix22.png, id=1095, 748.7975pt x 335.2525pt>
 File: appendix/fix22.png Graphic file (type png)
 <use appendix/fix22.png>
-Package pdftex.def Info: appendix/fix22.png  used on input line 507.
+Package pdftex.def Info: appendix/fix22.png  used on input line 506.
 (pdftex.def)             Requested size: 89.85182pt x 40.22856pt.
 <appendix/calco.png, id=1096, 499.8675pt x 502.87875pt>
 File: appendix/calco.png Graphic file (type png)
 <use appendix/calco.png>
-Package pdftex.def Info: appendix/calco.png  used on input line 508.
+Package pdftex.def Info: appendix/calco.png  used on input line 507.
 (pdftex.def)             Requested size: 59.9815pt x 60.34283pt.
 <appendix/rolamentoorigi.png, id=1097, 502.87875pt x 499.8675pt>
 File: appendix/rolamentoorigi.png Graphic file (type png)
 <use appendix/rolamentoorigi.png>
-Package pdftex.def Info: appendix/rolamentoorigi.png  used on input line 510.
+Package pdftex.def Info: appendix/rolamentoorigi.png  used on input line 509.
 (pdftex.def)             Requested size: 60.34283pt x 59.9815pt.
 <appendix/frot2.png, id=1098, 537.00626pt x 468.75125pt>
 File: appendix/frot2.png Graphic file (type png)
 <use appendix/frot2.png>
-Package pdftex.def Info: appendix/frot2.png  used on input line 511.
+Package pdftex.def Info: appendix/frot2.png  used on input line 510.
 (pdftex.def)             Requested size: 64.43796pt x 56.24771pt.
 <appendix/ffixper.png, id=1099, 669.50125pt x 375.4025pt>
 File: appendix/ffixper.png Graphic file (type png)
 <use appendix/ffixper.png>
-Package pdftex.def Info: appendix/ffixper.png  used on input line 513.
+Package pdftex.def Info: appendix/ffixper.png  used on input line 512.
 (pdftex.def)             Requested size: 80.33669pt x 45.04636pt.
 <appendix/rolamento42.png, id=1100, 497.86pt x 505.89pt>
 File: appendix/rolamento42.png Graphic file (type png)
 <use appendix/rolamento42.png>
-Package pdftex.def Info: appendix/rolamento42.png  used on input line 514.
+Package pdftex.def Info: appendix/rolamento42.png  used on input line 513.
 (pdftex.def)             Requested size: 59.74062pt x 60.70418pt.
 <appendix/frot3.png, id=1101, 554.07pt x 453.695pt>
 File: appendix/frot3.png Graphic file (type png)
 <use appendix/frot3.png>
-Package pdftex.def Info: appendix/frot3.png  used on input line 516.
+Package pdftex.def Info: appendix/frot3.png  used on input line 515.
 (pdftex.def)             Requested size: 66.48552pt x 54.44104pt.
  [81 </home/jess/docs_saci/saci_report/appendix/cantoneira.png> </home/jess/docs_saci/saci_report/appendix/ffixper1.png> </home/jess/docs_saci/saci_report/appendix/fr54.png> </home/jess/docs_saci/saci_report/appendix/frot1.png> </home/jess/docs_saci/saci_report/appendix/fix2.png> </home/jess/docs_saci/saci_report/appendix/fix22.png> </home/jess/docs_saci/saci_report/appendix/calco.png> </home/jess/docs_saci/saci_report/appendix/rolamentoorigi.png> </home/jess/docs_saci/saci_report/appendix/frot2.png> </home/jess/docs_saci/saci_report/appendix/ffixper.png> </home/jess/docs_saci/saci_report/appendix/rolamento42.png> </home/jess/docs_saci/saci_report/appendix/frot3.png>] [82
 
@@ -2198,10 +2198,10 @@ Package pdftex.def Info: appendix/frot3.png  used on input line 516.
 <appendix/3_vistas.png, id=1128, 1242.6425pt x 861.2175pt>
 File: appendix/3_vistas.png Graphic file (type png)
 <use appendix/3_vistas.png>
-Package pdftex.def Info: appendix/3_vistas.png  used on input line 533.
+Package pdftex.def Info: appendix/3_vistas.png  used on input line 532.
 (pdftex.def)             Requested size: 683.4555pt x 473.67108pt.
 
-Overfull \hbox (18.67108pt too wide) in paragraph at lines 533--534
+Overfull \hbox (18.67108pt too wide) in paragraph at lines 532--533
  [][] 
  []
 
@@ -2215,7 +2215,7 @@ Overfull \vbox (28.80553pt too high) has occurred while \output is active []
 <appendix/isometrica.png, id=1138, 1101.11375pt x 761.84625pt>
 File: appendix/isometrica.png Graphic file (type png)
 <use appendix/isometrica.png>
-Package pdftex.def Info: appendix/isometrica.png  used on input line 541.
+Package pdftex.def Info: appendix/isometrica.png  used on input line 540.
 (pdftex.def)             Requested size: 605.61446pt x 419.01674pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -2224,12 +2224,12 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <appendix/esforcos.png, id=1145, 1347.0325pt x 418.56375pt>
 File: appendix/esforcos.png Graphic file (type png)
 <use appendix/esforcos.png>
-Package pdftex.def Info: appendix/esforcos.png  used on input line 553.
+Package pdftex.def Info: appendix/esforcos.png  used on input line 552.
 (pdftex.def)             Requested size: 455.0pt x 141.3837pt.
 <appendix/esforcom.png, id=1148, 1346.02875pt x 418.56375pt>
 File: appendix/esforcom.png Graphic file (type png)
 <use appendix/esforcom.png>
-Package pdftex.def Info: appendix/esforcom.png  used on input line 568.
+Package pdftex.def Info: appendix/esforcom.png  used on input line 567.
 (pdftex.def)             Requested size: 455.0pt x 141.48589pt.
  [86 </home/jess/docs_saci/saci_report/appendix/esforcos.png> </home/jess/docs_saci/saci_report/appendix/esforcom.png>] [87] [88
 
@@ -2240,7 +2240,7 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 595.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 594.
  (/usr/share/texlive/texmf-dist/tex/latex/base/latin1.def
 File: latin1.def 2015/03/17 v1.2c Input encoding file
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/se-utf8.def
@@ -2284,20 +2284,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <appendix/wiring_1.png, id=1652, 681.29532pt x 526.96875pt>
 File: appendix/wiring_1.png Graphic file (type png)
 <use appendix/wiring_1.png>
-Package pdftex.def Info: appendix/wiring_1.png  used on input line 602.
+Package pdftex.def Info: appendix/wiring_1.png  used on input line 601.
 (pdftex.def)             Requested size: 490.53226pt x 379.4172pt.
 
-Overfull \hbox (35.53226pt too wide) in paragraph at lines 602--604
+Overfull \hbox (35.53226pt too wide) in paragraph at lines 601--603
  [][] 
  []
 
 <appendix/wiring_2.png, id=1653, 681.29532pt x 526.96875pt>
 File: appendix/wiring_2.png Graphic file (type png)
 <use appendix/wiring_2.png>
-Package pdftex.def Info: appendix/wiring_2.png  used on input line 608.
+Package pdftex.def Info: appendix/wiring_2.png  used on input line 607.
 (pdftex.def)             Requested size: 490.53226pt x 379.4172pt.
 
-Overfull \hbox (35.53226pt too wide) in paragraph at lines 608--610
+Overfull \hbox (35.53226pt too wide) in paragraph at lines 607--609
  [][] 
  []
 
@@ -2310,10 +2310,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <appendix/wiring_3.png, id=1659, 681.29532pt x 526.96875pt>
 File: appendix/wiring_3.png Graphic file (type png)
 <use appendix/wiring_3.png>
-Package pdftex.def Info: appendix/wiring_3.png  used on input line 614.
+Package pdftex.def Info: appendix/wiring_3.png  used on input line 613.
 (pdftex.def)             Requested size: 490.53226pt x 379.4172pt.
 
-Overfull \hbox (35.53226pt too wide) in paragraph at lines 614--616
+Overfull \hbox (35.53226pt too wide) in paragraph at lines 613--615
  [][] 
  []
 
@@ -2324,10 +2324,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <appendix/wiring_4.png, id=1665, 681.29532pt x 526.96875pt>
 File: appendix/wiring_4.png Graphic file (type png)
 <use appendix/wiring_4.png>
-Package pdftex.def Info: appendix/wiring_4.png  used on input line 620.
+Package pdftex.def Info: appendix/wiring_4.png  used on input line 619.
 (pdftex.def)             Requested size: 490.53226pt x 379.4172pt.
 
-Overfull \hbox (35.53226pt too wide) in paragraph at lines 620--622
+Overfull \hbox (35.53226pt too wide) in paragraph at lines 619--621
  [][] 
  []
 
@@ -2338,10 +2338,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <appendix/wiring_5.png, id=1671, 681.29532pt x 526.96875pt>
 File: appendix/wiring_5.png Graphic file (type png)
 <use appendix/wiring_5.png>
-Package pdftex.def Info: appendix/wiring_5.png  used on input line 626.
+Package pdftex.def Info: appendix/wiring_5.png  used on input line 625.
 (pdftex.def)             Requested size: 490.53226pt x 379.4172pt.
 
-Overfull \hbox (35.53226pt too wide) in paragraph at lines 626--628
+Overfull \hbox (35.53226pt too wide) in paragraph at lines 625--627
  [][] 
  []
 
@@ -2352,10 +2352,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <appendix/wiring_6.png, id=1677, 681.29532pt x 526.96875pt>
 File: appendix/wiring_6.png Graphic file (type png)
 <use appendix/wiring_6.png>
-Package pdftex.def Info: appendix/wiring_6.png  used on input line 632.
+Package pdftex.def Info: appendix/wiring_6.png  used on input line 631.
 (pdftex.def)             Requested size: 490.53226pt x 379.4172pt.
 
-Overfull \hbox (35.53226pt too wide) in paragraph at lines 632--634
+Overfull \hbox (35.53226pt too wide) in paragraph at lines 631--633
  [][] 
  []
 
@@ -2366,10 +2366,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <appendix/wiring_7.png, id=1684, 681.29532pt x 526.96875pt>
 File: appendix/wiring_7.png Graphic file (type png)
 <use appendix/wiring_7.png>
-Package pdftex.def Info: appendix/wiring_7.png  used on input line 638.
+Package pdftex.def Info: appendix/wiring_7.png  used on input line 637.
 (pdftex.def)             Requested size: 490.53226pt x 379.4172pt.
 
-Overfull \hbox (35.53226pt too wide) in paragraph at lines 638--640
+Overfull \hbox (35.53226pt too wide) in paragraph at lines 637--639
  [][] 
  []
 
@@ -2382,20 +2382,20 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <appendix/connection_1.png, id=1700, 681.29532pt x 526.96875pt>
 File: appendix/connection_1.png Graphic file (type png)
 <use appendix/connection_1.png>
-Package pdftex.def Info: appendix/connection_1.png  used on input line 647.
+Package pdftex.def Info: appendix/connection_1.png  used on input line 646.
 (pdftex.def)             Requested size: 490.53226pt x 379.4172pt.
 
-Overfull \hbox (35.53226pt too wide) in paragraph at lines 647--649
+Overfull \hbox (35.53226pt too wide) in paragraph at lines 646--648
  [][] 
  []
 
 <appendix/connection_2.png, id=1701, 681.29532pt x 526.96875pt>
 File: appendix/connection_2.png Graphic file (type png)
 <use appendix/connection_2.png>
-Package pdftex.def Info: appendix/connection_2.png  used on input line 653.
+Package pdftex.def Info: appendix/connection_2.png  used on input line 652.
 (pdftex.def)             Requested size: 490.53226pt x 379.4172pt.
 
-Overfull \hbox (35.53226pt too wide) in paragraph at lines 653--655
+Overfull \hbox (35.53226pt too wide) in paragraph at lines 652--654
  [][] 
  []
 
@@ -2406,10 +2406,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <appendix/connection_3.png, id=1707, 681.29532pt x 526.96875pt>
 File: appendix/connection_3.png Graphic file (type png)
 <use appendix/connection_3.png>
-Package pdftex.def Info: appendix/connection_3.png  used on input line 659.
+Package pdftex.def Info: appendix/connection_3.png  used on input line 658.
 (pdftex.def)             Requested size: 490.53226pt x 379.4172pt.
 
-Overfull \hbox (35.53226pt too wide) in paragraph at lines 659--661
+Overfull \hbox (35.53226pt too wide) in paragraph at lines 658--660
  [][] 
  []
 
@@ -2420,10 +2420,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <appendix/connection_4.png, id=1713, 681.29532pt x 526.96875pt>
 File: appendix/connection_4.png Graphic file (type png)
 <use appendix/connection_4.png>
-Package pdftex.def Info: appendix/connection_4.png  used on input line 665.
+Package pdftex.def Info: appendix/connection_4.png  used on input line 664.
 (pdftex.def)             Requested size: 490.53226pt x 379.4172pt.
 
-Overfull \hbox (35.53226pt too wide) in paragraph at lines 665--667
+Overfull \hbox (35.53226pt too wide) in paragraph at lines 664--666
  [][] 
  []
 
@@ -2434,10 +2434,10 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <appendix/connection_5.png, id=1720, 681.29532pt x 526.96875pt>
 File: appendix/connection_5.png Graphic file (type png)
 <use appendix/connection_5.png>
-Package pdftex.def Info: appendix/connection_5.png  used on input line 671.
+Package pdftex.def Info: appendix/connection_5.png  used on input line 670.
 (pdftex.def)             Requested size: 490.53226pt x 379.4172pt.
 
-Overfull \hbox (35.53226pt too wide) in paragraph at lines 671--673
+Overfull \hbox (35.53226pt too wide) in paragraph at lines 670--672
  [][] 
  []
 
@@ -2450,247 +2450,247 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <annex/genie_nano.pdf, id=1735, 614.295pt x 794.97pt>
 File: annex/genie_nano.pdf Graphic file (type pdf)
 <use annex/genie_nano.pdf>
-Package pdftex.def Info: annex/genie_nano.pdf  used on input line 693.
+Package pdftex.def Info: annex/genie_nano.pdf  used on input line 692.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: annex/genie_nano.pdf Graphic file (type pdf)
 <use annex/genie_nano.pdf>
-Package pdftex.def Info: annex/genie_nano.pdf  used on input line 693.
+Package pdftex.def Info: annex/genie_nano.pdf  used on input line 692.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 <annex/genie_nano.pdf, id=1738, page=1, 614.295pt x 794.97pt>
 File: annex/genie_nano.pdf Graphic file (type pdf)
 <use annex/genie_nano.pdf, page 1>
-Package pdftex.def Info: annex/genie_nano.pdf , page1 used on input line 693.
+Package pdftex.def Info: annex/genie_nano.pdf , page1 used on input line 692.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: annex/genie_nano.pdf Graphic file (type pdf)
 <use annex/genie_nano.pdf, page 1>
-Package pdftex.def Info: annex/genie_nano.pdf , page1 used on input line 693.
+Package pdftex.def Info: annex/genie_nano.pdf , page1 used on input line 692.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [115]
 File: annex/genie_nano.pdf Graphic file (type pdf)
 <use annex/genie_nano.pdf, page 1>
-Package pdftex.def Info: annex/genie_nano.pdf , page1 used on input line 693.
+Package pdftex.def Info: annex/genie_nano.pdf , page1 used on input line 692.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: annex/genie_nano.pdf Graphic file (type pdf)
 <use annex/genie_nano.pdf, page 1>
-Package pdftex.def Info: annex/genie_nano.pdf , page1 used on input line 693.
+Package pdftex.def Info: annex/genie_nano.pdf , page1 used on input line 692.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: annex/genie_nano.pdf Graphic file (type pdf)
 <use annex/genie_nano.pdf, page 1>
-Package pdftex.def Info: annex/genie_nano.pdf , page1 used on input line 693.
+Package pdftex.def Info: annex/genie_nano.pdf , page1 used on input line 692.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [116 </home/jess/docs_saci/saci_report/annex/genie_nano.pdf>]
 <annex/genie_nano.pdf, id=1774, page=2, 614.295pt x 794.97pt>
 File: annex/genie_nano.pdf Graphic file (type pdf)
 <use annex/genie_nano.pdf, page 2>
-Package pdftex.def Info: annex/genie_nano.pdf , page2 used on input line 693.
+Package pdftex.def Info: annex/genie_nano.pdf , page2 used on input line 692.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: annex/genie_nano.pdf Graphic file (type pdf)
 <use annex/genie_nano.pdf, page 2>
-Package pdftex.def Info: annex/genie_nano.pdf , page2 used on input line 693.
+Package pdftex.def Info: annex/genie_nano.pdf , page2 used on input line 692.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: annex/genie_nano.pdf Graphic file (type pdf)
 <use annex/genie_nano.pdf, page 2>
-Package pdftex.def Info: annex/genie_nano.pdf , page2 used on input line 693.
+Package pdftex.def Info: annex/genie_nano.pdf , page2 used on input line 692.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [117 </home/jess/docs_saci/saci_report/annex/genie_nano.pdf>]
 <annex/genie_nano.pdf, id=1782, page=3, 614.295pt x 794.97pt>
 File: annex/genie_nano.pdf Graphic file (type pdf)
 <use annex/genie_nano.pdf, page 3>
-Package pdftex.def Info: annex/genie_nano.pdf , page3 used on input line 693.
+Package pdftex.def Info: annex/genie_nano.pdf , page3 used on input line 692.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: annex/genie_nano.pdf Graphic file (type pdf)
 <use annex/genie_nano.pdf, page 3>
-Package pdftex.def Info: annex/genie_nano.pdf , page3 used on input line 693.
+Package pdftex.def Info: annex/genie_nano.pdf , page3 used on input line 692.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: annex/genie_nano.pdf Graphic file (type pdf)
 <use annex/genie_nano.pdf, page 3>
-Package pdftex.def Info: annex/genie_nano.pdf , page3 used on input line 693.
+Package pdftex.def Info: annex/genie_nano.pdf , page3 used on input line 692.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [118 </home/jess/docs_saci/saci_report/annex/genie_nano.pdf>]
 <annex/PH42-020-S300-R.pdf, id=1790, 597.19106pt x 845.07718pt>
 File: annex/PH42-020-S300-R.pdf Graphic file (type pdf)
 <use annex/PH42-020-S300-R.pdf>
-Package pdftex.def Info: annex/PH42-020-S300-R.pdf  used on input line 837.
+Package pdftex.def Info: annex/PH42-020-S300-R.pdf  used on input line 836.
 (pdftex.def)             Requested size: 597.1896pt x 845.07512pt.
 File: annex/PH42-020-S300-R.pdf Graphic file (type pdf)
 <use annex/PH42-020-S300-R.pdf>
-Package pdftex.def Info: annex/PH42-020-S300-R.pdf  used on input line 837.
+Package pdftex.def Info: annex/PH42-020-S300-R.pdf  used on input line 836.
 (pdftex.def)             Requested size: 597.1896pt x 845.07512pt.
 <annex/PH42-020-S300-R.pdf, id=1793, page=1, 597.19106pt x 845.07718pt>
 File: annex/PH42-020-S300-R.pdf Graphic file (type pdf)
 <use annex/PH42-020-S300-R.pdf, page 1>
-Package pdftex.def Info: annex/PH42-020-S300-R.pdf , page1 used on input line 837.
+Package pdftex.def Info: annex/PH42-020-S300-R.pdf , page1 used on input line 836.
 (pdftex.def)             Requested size: 597.1896pt x 845.07512pt.
 File: annex/PH42-020-S300-R.pdf Graphic file (type pdf)
 <use annex/PH42-020-S300-R.pdf, page 1>
-Package pdftex.def Info: annex/PH42-020-S300-R.pdf , page1 used on input line 837.
+Package pdftex.def Info: annex/PH42-020-S300-R.pdf , page1 used on input line 836.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
  [119
 
 ]
 File: annex/PH42-020-S300-R.pdf Graphic file (type pdf)
 <use annex/PH42-020-S300-R.pdf, page 1>
-Package pdftex.def Info: annex/PH42-020-S300-R.pdf , page1 used on input line 837.
+Package pdftex.def Info: annex/PH42-020-S300-R.pdf , page1 used on input line 836.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
 File: annex/PH42-020-S300-R.pdf Graphic file (type pdf)
 <use annex/PH42-020-S300-R.pdf, page 1>
-Package pdftex.def Info: annex/PH42-020-S300-R.pdf , page1 used on input line 837.
+Package pdftex.def Info: annex/PH42-020-S300-R.pdf , page1 used on input line 836.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
 File: annex/PH42-020-S300-R.pdf Graphic file (type pdf)
 <use annex/PH42-020-S300-R.pdf, page 1>
-Package pdftex.def Info: annex/PH42-020-S300-R.pdf , page1 used on input line 837.
+Package pdftex.def Info: annex/PH42-020-S300-R.pdf , page1 used on input line 836.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
  [120 </home/jess/docs_saci/saci_report/annex/PH42-020-S300-R.pdf>]
 <annex/PH42-020-S300-R.pdf, id=1875, page=2, 597.19106pt x 845.07718pt>
 File: annex/PH42-020-S300-R.pdf Graphic file (type pdf)
 <use annex/PH42-020-S300-R.pdf, page 2>
-Package pdftex.def Info: annex/PH42-020-S300-R.pdf , page2 used on input line 837.
+Package pdftex.def Info: annex/PH42-020-S300-R.pdf , page2 used on input line 836.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
 File: annex/PH42-020-S300-R.pdf Graphic file (type pdf)
 <use annex/PH42-020-S300-R.pdf, page 2>
-Package pdftex.def Info: annex/PH42-020-S300-R.pdf , page2 used on input line 837.
+Package pdftex.def Info: annex/PH42-020-S300-R.pdf , page2 used on input line 836.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
 File: annex/PH42-020-S300-R.pdf Graphic file (type pdf)
 <use annex/PH42-020-S300-R.pdf, page 2>
-Package pdftex.def Info: annex/PH42-020-S300-R.pdf , page2 used on input line 837.
+Package pdftex.def Info: annex/PH42-020-S300-R.pdf , page2 used on input line 836.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
  [121 </home/jess/docs_saci/saci_report/annex/PH42-020-S300-R.pdf>]
 <annex/PH42-020-S300-R.pdf, id=1913, page=3, 597.19106pt x 845.07718pt>
 File: annex/PH42-020-S300-R.pdf Graphic file (type pdf)
 <use annex/PH42-020-S300-R.pdf, page 3>
-Package pdftex.def Info: annex/PH42-020-S300-R.pdf , page3 used on input line 837.
+Package pdftex.def Info: annex/PH42-020-S300-R.pdf , page3 used on input line 836.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
 File: annex/PH42-020-S300-R.pdf Graphic file (type pdf)
 <use annex/PH42-020-S300-R.pdf, page 3>
-Package pdftex.def Info: annex/PH42-020-S300-R.pdf , page3 used on input line 837.
+Package pdftex.def Info: annex/PH42-020-S300-R.pdf , page3 used on input line 836.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
 File: annex/PH42-020-S300-R.pdf Graphic file (type pdf)
 <use annex/PH42-020-S300-R.pdf, page 3>
-Package pdftex.def Info: annex/PH42-020-S300-R.pdf , page3 used on input line 837.
+Package pdftex.def Info: annex/PH42-020-S300-R.pdf , page3 used on input line 836.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
  [122 </home/jess/docs_saci/saci_report/annex/PH42-020-S300-R.pdf>]
 <annex/especificacaoh54100.pdf, id=1947, 614.295pt x 794.97pt>
 File: annex/especificacaoh54100.pdf Graphic file (type pdf)
 <use annex/especificacaoh54100.pdf>
-Package pdftex.def Info: annex/especificacaoh54100.pdf  used on input line 910.
+Package pdftex.def Info: annex/especificacaoh54100.pdf  used on input line 909.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: annex/especificacaoh54100.pdf Graphic file (type pdf)
 <use annex/especificacaoh54100.pdf>
-Package pdftex.def Info: annex/especificacaoh54100.pdf  used on input line 910.
+Package pdftex.def Info: annex/especificacaoh54100.pdf  used on input line 909.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 <annex/especificacaoh54100.pdf, id=1950, page=1, 614.295pt x 794.97pt>
 File: annex/especificacaoh54100.pdf Graphic file (type pdf)
 <use annex/especificacaoh54100.pdf, page 1>
-Package pdftex.def Info: annex/especificacaoh54100.pdf , page1 used on input line 910.
+Package pdftex.def Info: annex/especificacaoh54100.pdf , page1 used on input line 909.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: annex/especificacaoh54100.pdf Graphic file (type pdf)
 <use annex/especificacaoh54100.pdf, page 1>
-Package pdftex.def Info: annex/especificacaoh54100.pdf , page1 used on input line 910.
+Package pdftex.def Info: annex/especificacaoh54100.pdf , page1 used on input line 909.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [123
 
 ]
 File: annex/especificacaoh54100.pdf Graphic file (type pdf)
 <use annex/especificacaoh54100.pdf, page 1>
-Package pdftex.def Info: annex/especificacaoh54100.pdf , page1 used on input line 910.
+Package pdftex.def Info: annex/especificacaoh54100.pdf , page1 used on input line 909.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: annex/especificacaoh54100.pdf Graphic file (type pdf)
 <use annex/especificacaoh54100.pdf, page 1>
-Package pdftex.def Info: annex/especificacaoh54100.pdf , page1 used on input line 910.
+Package pdftex.def Info: annex/especificacaoh54100.pdf , page1 used on input line 909.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: annex/especificacaoh54100.pdf Graphic file (type pdf)
 <use annex/especificacaoh54100.pdf, page 1>
-Package pdftex.def Info: annex/especificacaoh54100.pdf , page1 used on input line 910.
+Package pdftex.def Info: annex/especificacaoh54100.pdf , page1 used on input line 909.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [124 </home/jess/docs_saci/saci_report/annex/especificacaoh54100.pdf>]
 <annex/especificacaoh54100.pdf, id=2032, page=2, 614.295pt x 794.97pt>
 File: annex/especificacaoh54100.pdf Graphic file (type pdf)
 <use annex/especificacaoh54100.pdf, page 2>
-Package pdftex.def Info: annex/especificacaoh54100.pdf , page2 used on input line 910.
+Package pdftex.def Info: annex/especificacaoh54100.pdf , page2 used on input line 909.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: annex/especificacaoh54100.pdf Graphic file (type pdf)
 <use annex/especificacaoh54100.pdf, page 2>
-Package pdftex.def Info: annex/especificacaoh54100.pdf , page2 used on input line 910.
+Package pdftex.def Info: annex/especificacaoh54100.pdf , page2 used on input line 909.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: annex/especificacaoh54100.pdf Graphic file (type pdf)
 <use annex/especificacaoh54100.pdf, page 2>
-Package pdftex.def Info: annex/especificacaoh54100.pdf , page2 used on input line 910.
+Package pdftex.def Info: annex/especificacaoh54100.pdf , page2 used on input line 909.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [125 </home/jess/docs_saci/saci_report/annex/especificacaoh54100.pdf>]
 <annex/especificacaoh54100.pdf, id=2069, page=3, 614.295pt x 794.97pt>
 File: annex/especificacaoh54100.pdf Graphic file (type pdf)
 <use annex/especificacaoh54100.pdf, page 3>
-Package pdftex.def Info: annex/especificacaoh54100.pdf , page3 used on input line 910.
+Package pdftex.def Info: annex/especificacaoh54100.pdf , page3 used on input line 909.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: annex/especificacaoh54100.pdf Graphic file (type pdf)
 <use annex/especificacaoh54100.pdf, page 3>
-Package pdftex.def Info: annex/especificacaoh54100.pdf , page3 used on input line 910.
+Package pdftex.def Info: annex/especificacaoh54100.pdf , page3 used on input line 909.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: annex/especificacaoh54100.pdf Graphic file (type pdf)
 <use annex/especificacaoh54100.pdf, page 3>
-Package pdftex.def Info: annex/especificacaoh54100.pdf , page3 used on input line 910.
+Package pdftex.def Info: annex/especificacaoh54100.pdf , page3 used on input line 909.
 (pdftex.def)             Requested size: 597.78697pt x 773.60669pt.
  [126 </home/jess/docs_saci/saci_report/annex/especificacaoh54100.pdf>]
 <annex/especificacaoh54.pdf, id=2098, 597.19106pt x 845.07718pt>
 File: annex/especificacaoh54.pdf Graphic file (type pdf)
 <use annex/especificacaoh54.pdf>
-Package pdftex.def Info: annex/especificacaoh54.pdf  used on input line 986.
+Package pdftex.def Info: annex/especificacaoh54.pdf  used on input line 985.
 (pdftex.def)             Requested size: 597.1896pt x 845.07512pt.
 File: annex/especificacaoh54.pdf Graphic file (type pdf)
 <use annex/especificacaoh54.pdf>
-Package pdftex.def Info: annex/especificacaoh54.pdf  used on input line 986.
+Package pdftex.def Info: annex/especificacaoh54.pdf  used on input line 985.
 (pdftex.def)             Requested size: 597.1896pt x 845.07512pt.
 <annex/especificacaoh54.pdf, id=2101, page=1, 597.19106pt x 845.07718pt>
 File: annex/especificacaoh54.pdf Graphic file (type pdf)
 <use annex/especificacaoh54.pdf, page 1>
-Package pdftex.def Info: annex/especificacaoh54.pdf , page1 used on input line 986.
+Package pdftex.def Info: annex/especificacaoh54.pdf , page1 used on input line 985.
 (pdftex.def)             Requested size: 597.1896pt x 845.07512pt.
 File: annex/especificacaoh54.pdf Graphic file (type pdf)
 <use annex/especificacaoh54.pdf, page 1>
-Package pdftex.def Info: annex/especificacaoh54.pdf , page1 used on input line 986.
+Package pdftex.def Info: annex/especificacaoh54.pdf , page1 used on input line 985.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
  [127
 
 ]
 File: annex/especificacaoh54.pdf Graphic file (type pdf)
 <use annex/especificacaoh54.pdf, page 1>
-Package pdftex.def Info: annex/especificacaoh54.pdf , page1 used on input line 986.
+Package pdftex.def Info: annex/especificacaoh54.pdf , page1 used on input line 985.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
 File: annex/especificacaoh54.pdf Graphic file (type pdf)
 <use annex/especificacaoh54.pdf, page 1>
-Package pdftex.def Info: annex/especificacaoh54.pdf , page1 used on input line 986.
+Package pdftex.def Info: annex/especificacaoh54.pdf , page1 used on input line 985.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
 File: annex/especificacaoh54.pdf Graphic file (type pdf)
 <use annex/especificacaoh54.pdf, page 1>
-Package pdftex.def Info: annex/especificacaoh54.pdf , page1 used on input line 986.
+Package pdftex.def Info: annex/especificacaoh54.pdf , page1 used on input line 985.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
  [128 </home/jess/docs_saci/saci_report/annex/especificacaoh54.pdf>]
 <annex/especificacaoh54.pdf, id=2183, page=2, 597.19106pt x 845.07718pt>
 File: annex/especificacaoh54.pdf Graphic file (type pdf)
 <use annex/especificacaoh54.pdf, page 2>
-Package pdftex.def Info: annex/especificacaoh54.pdf , page2 used on input line 986.
+Package pdftex.def Info: annex/especificacaoh54.pdf , page2 used on input line 985.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
 File: annex/especificacaoh54.pdf Graphic file (type pdf)
 <use annex/especificacaoh54.pdf, page 2>
-Package pdftex.def Info: annex/especificacaoh54.pdf , page2 used on input line 986.
+Package pdftex.def Info: annex/especificacaoh54.pdf , page2 used on input line 985.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
 File: annex/especificacaoh54.pdf Graphic file (type pdf)
 <use annex/especificacaoh54.pdf, page 2>
-Package pdftex.def Info: annex/especificacaoh54.pdf , page2 used on input line 986.
+Package pdftex.def Info: annex/especificacaoh54.pdf , page2 used on input line 985.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
  [129 </home/jess/docs_saci/saci_report/annex/especificacaoh54.pdf>]
 <annex/especificacaoh54.pdf, id=2222, page=3, 597.19106pt x 845.07718pt>
 File: annex/especificacaoh54.pdf Graphic file (type pdf)
 <use annex/especificacaoh54.pdf, page 3>
-Package pdftex.def Info: annex/especificacaoh54.pdf , page3 used on input line 986.
+Package pdftex.def Info: annex/especificacaoh54.pdf , page3 used on input line 985.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
 File: annex/especificacaoh54.pdf Graphic file (type pdf)
 <use annex/especificacaoh54.pdf, page 3>
-Package pdftex.def Info: annex/especificacaoh54.pdf , page3 used on input line 986.
+Package pdftex.def Info: annex/especificacaoh54.pdf , page3 used on input line 985.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
 File: annex/especificacaoh54.pdf Graphic file (type pdf)
 <use annex/especificacaoh54.pdf, page 3>
-Package pdftex.def Info: annex/especificacaoh54.pdf , page3 used on input line 986.
+Package pdftex.def Info: annex/especificacaoh54.pdf , page3 used on input line 985.
 (pdftex.def)             Requested size: 597.21693pt x 845.1138pt.
  [130 </home/jess/docs_saci/saci_report/annex/especificacaoh54.pdf>] 
 AED: lastpage setting LastPage
@@ -2703,29 +2703,29 @@ AED: lastpage setting LastPage
 \tf@toc=\write9
 \openout9 = `report.toc'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 992.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 992.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 991.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 991.
 (/home/jess/docs_saci/saci_report/report.aux (/home/jess/docs_saci/saci_report/sections/01introducao.aux) (/home/jess/docs_saci/saci_report/sections/02conceito.aux) (/home/jess/docs_saci/saci_report/sections/03desenvolvimento.aux) (/home/jess/docs_saci/saci_report/sections/04implementacao.aux) (/home/jess/docs_saci/saci_report/sections/05resultados.aux) (/home/jess/docs_saci/saci_report/sections/06confiabilidade.aux) (/home/jess/docs_saci/saci_report/sections/07conhecimento.aux) (/home/jess/docs_saci/saci_report/sections/08conclusao.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 992.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 992.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 991.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 991.
 Package rerunfilecheck Info: File `report.brf' has not changed.
 (rerunfilecheck)             Checksum: 48F2134C1730209B4E9AB0116A872EF9;1221.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 992.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 991.
  ) 
 Here is how much of TeX's memory you used:
- 41959 strings out of 492982
- 877459 string characters out of 6134896
- 1553793 words of memory out of 5000000
+ 41957 strings out of 492982
+ 877437 string characters out of 6134896
+ 1554834 words of memory out of 5000000
  43589 multiletter control sequences out of 15000+600000
- 105290 words of font info for 166 fonts, out of 8000000 for 9000
+ 105161 words of font info for 165 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  68i,19n,100p,1252b,2472s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbxi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi6.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb>
-Output written on /home/jess/docs_saci/saci_report/report.pdf (134 pages, 21766856 bytes).
+Output written on /home/jess/docs_saci/saci_report/report.pdf (134 pages, 21765755 bytes).
 PDF statistics:
  2729 PDF objects out of 2984 (max. 8388607)
  2147 compressed objects within 22 object streams
